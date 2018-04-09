@@ -1,0 +1,546 @@
+do run
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=656.08, duration=0.0002760887146
+script duration name:air seconds:656.0
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=2.31266021729e-05
+air in script context. using previous estimated duration
+script duration name:air seconds:656.0
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=4.0, duration=0.000110864639282
+Script duration 1312.0
+Run total estimated duration= 1313.000
+run duration: 0:21:53
+doing event level: 2
+----------------- start -----------------
+**************** Experiment Type: Ar/Ar, Ar/Ar
+create new session 5012044016
+close session 5012044016
+$$$$$ Clearing conditionals
+adding conditionals 
+Add queue conditionals
+add default conditionals
+adding default conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
+Start automated run ba-01-H-21
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+%%%%%%%%%%%%%%%%%% setting automated run ba-01-H-21
+No value "sensitivity_multiplier" in metadata
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+============================= Pre Extraction Check =============================
+loading queue conditionals pre_run_terminations
+loading system conditionals pre_run_terminations
+loading conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
+14:34:22 -- ******* Pre Extraction Check *******
+Get a measurement from the spectrometer
+Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=-0.00000,-0.09516,0.14394,-0.34989,-0.07829
+14:34:22 -- testing system defined conditionals
+Checking default pre extraction terminations n=1
+testing L2_CDD_
+evaluate ot="L2(CDD).inactive" t="L2_CDD_", ctx="{'L2_CDD_': False}"
+14:34:22 -- ******* Pre Extraction Check Passed *******
+=================================================================================
+start extraction
+do extraction
+Analysis started at 14:34:22.138214
+Extraction Started helix_air.py
+14:34:22 -- ******* Extraction Started helix_air.py *******
+state changed from not run to extraction
+DO EXTRACTION <pychron.extraction_line.pyscript_runner.PyScriptRunner object at 0x12be144d0>
+testing...
+no interpolation path defined
+executed snippet estimated_duration=158.0, duration=0.000343084335327
+Air pipette
+open ('3',) {}
+open name=3 desc=---
+check software interlocks 3
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+ROUT:OPEN (@103)
+change switch state (True, True)
+update switch state 3 True args=() kw={} ncanvase=2
+14:34:23 -- OPEN   VALVE-3 (SecondToIP)
+-------------------------- open 3 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+close ('2',) {}
+close name=2 desc=---
+check software interlocks 2
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+ROUT:CLOSE (@102)
+change switch state (True, True)
+update switch state 2 False args=() kw={} ncanvase=2
+14:35:03 -- CLOSE  VALVE-2 (ExtrToMS)
+-------------------------- close 2 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+open ('1',) {}
+open name=1 desc=---
+check software interlocks 1
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open Valve Ion Pump Set ===>> OK
+change switch state (True, True)
+update switch state 1 True args=() kw={} ncanvase=2
+14:35:23 -- OPEN   VALVE-1 (MSIonPump)
+-------------------------- open 1 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+close ('8',) {}
+close name=8 desc=---
+check software interlocks 8
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+ROUT:CLOSE (@108)
+change switch state (True, True)
+update switch state 8 False args=() kw={} ncanvase=2
+14:36:04 -- CLOSE  VALVE-8 (Sample1toFirst)
+-------------------------- close 8 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+close ('9',) {}
+close name=9 desc=---
+check software interlocks 9
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+ROUT:CLOSE (@109)
+change switch state (True, True)
+update switch state 9 False args=() kw={} ncanvase=2
+14:36:44 -- CLOSE  VALVE-9 (Sample2toFirst)
+-------------------------- close 9 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+close ('7',) {}
+close name=7 desc=---
+check software interlocks 7
+interlocks ['6']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+ROUT:CLOSE (@107)
+change switch state (True, True)
+update switch state 7 False args=() kw={} ncanvase=2
+14:37:24 -- CLOSE  VALVE-7 (APInner)
+-------------------------- close 7 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+open ('5',) {}
+open name=5 desc=---
+check software interlocks 5
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+ROUT:OPEN (@105)
+change switch state (True, True)
+update switch state 5 True args=() kw={} ncanvase=2
+14:38:04 -- OPEN   VALVE-5 (FirstToTurbo)
+-------------------------- open 5 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+open ('11',) {}
+open name=11 desc=---
+check software interlocks 11
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+ROUT:OPEN (@111)
+change switch state (True, True)
+update switch state 11 True args=() kw={} ncanvase=2
+14:38:45 -- OPEN   VALVE-11 (APSafety)
+-------------------------- open 11 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+open ('6',) {}
+open name=6 desc=---
+check software interlocks 6
+interlocks ['7']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@106)
+change switch state (True, True)
+update switch state 6 True args=() kw={} ncanvase=2
+14:39:25 -- OPEN   VALVE-6 (APOuter)
+-------------------------- open 6 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+sleep (15,) {}
+SLEEP 15.0
+block started
+WaitControl setup for 15.0  
+Join finished
+block finished. duration 320.011248112
+close ('6',) {}
+close name=6 desc=---
+check software interlocks 6
+interlocks ['7']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+ROUT:CLOSE (@106)
+change switch state (True, True)
+update switch state 6 False args=() kw={} ncanvase=2
+14:45:25 -- CLOSE  VALVE-6 (APOuter)
+-------------------------- close 6 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+Join finished
+block finished. duration 60.002821207
+Blank. Not filling pipette
+sleep (30,) {}
+SLEEP 30.0
+block started
+WaitControl setup for 30.0  
+Join finished
+block finished. duration 620.020603895
+close ('7',) {}
+close name=7 desc=---
+check software interlocks 7
+interlocks ['6']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+ROUT:CLOSE (@107)
+change switch state (True, True)
+update switch state 7 False args=() kw={} ncanvase=2
+14:57:26 -- CLOSE  VALVE-7 (APInner)
+-------------------------- close 7 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+close ('5',) {}
+close name=5 desc=---
+check software interlocks 5
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+ROUT:CLOSE (@105)
+change switch state (True, True)
+update switch state 5 False args=() kw={} ncanvase=2
+14:58:06 -- CLOSE  VALVE-5 (FirstToTurbo)
+-------------------------- close 5 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+close ('3',) {}
+close name=3 desc=---
+check software interlocks 3
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+ROUT:CLOSE (@103)
+change switch state (True, True)
+update switch state 3 False args=() kw={} ncanvase=2
+14:58:46 -- CLOSE  VALVE-3 (SecondToIP)
+-------------------------- close 3 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+Join finished
+block finished. duration 60.0029671192
+open ('4',) {}
+open name=4 desc=---
+check software interlocks 4
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@104)
+change switch state (True, True)
+update switch state 4 True args=() kw={} ncanvase=2
+15:00:26 -- OPEN   VALVE-4 (FirstToSecondStage)
+-------------------------- open 4 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+open ('6',) {}
+open name=6 desc=---
+check software interlocks 6
+interlocks ['7']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@106)
+change switch state (True, True)
+update switch state 6 True args=() kw={} ncanvase=2
+15:01:07 -- OPEN   VALVE-6 (APOuter)
+-------------------------- open 6 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+sleep (30,) {}
+SLEEP 30.0
+block started
+WaitControl setup for 30.0  
+tear down
+Runner runner:None
+load indicator states
+Switch indicator state True, Open
+handle state ('11', True, False)
+update switch state 11 True args=(False,) kw={} ncanvase=2
+Switch indicator state True, Open
+handle state ('10', True, False)
+update switch state 10 True args=(False,) kw={} ncanvase=2
+Switch indicator state True, Open
+handle state ('1', True, False)
+update switch state 1 True args=(False,) kw={} ncanvase=2
+Join finished
+block finished. duration 620.020716906
+executed snippet estimated_duration=237.0, duration=2245.38904595
+helix_air.py completed successfully
+no extraction action
+Requested Output= 0.000
+Achieved Output=  0.000
+no extraction action
+no extraction action
+no extraction action
+no extraction action
+persistence save...
+persistence save - db
+AutomatedRunPersister post_extraction_save deprecated
+persistence save - dvc
+no extraction position for 
+Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
+Extraction Finished
+15:11:47 -- ******* Extraction Finished *******
+no overlap. not waiting for min ms pumptime
+start measurement
+do measurement
+L#=ba-01-H analysis type=blank_air
+Measurement Started helix_air.py
+15:11:47 -- ******* Measurement Started helix_air.py *******
+state changed from extraction to measurement
+setting spec, defl, and gains
+GetExtractionLens ===>> 18.29
+GetYSymmetry ===>> 19.07
+GetZSymmetry ===>> 19.51
+GetZFocus ===>> 9.74
+GetDeflection L2(CDD) ===>> Error: Invalid Command
+Failed reading L2(CDD) deflection. Error=could not convert string to float: Error: Invalid Command. Using previous value 0
+GetGain H2 ===>> 0.986484670899424
+GetGain H1 ===>> 1.01080515922087
+GetGain AX ===>> 1.0071313708941
+GetGain L1 ===>> 1.00793592600847
+GetGain L2(CDD) ===>> 0
+pre measurement save
+New frame /Users/labuser/Pychron/data/isotopes/8a/40f297-2310-4175-8745-14aeaa2fc346.h5
+flush and close file /Users/labuser/Pychron/data/isotopes/8a/40f297-2310-4175-8745-14aeaa2fc346.h5
+testing...
+no interpolation path defined
+executed snippet estimated_duration=656.08, duration=0.000269174575806
+activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2(CDD)') {}
+activate detectors
+*************** Set Analysis View Ar/Ar
+create graphs
+Switch indicator state False, Closed
+handle state ('3', False, False)
+update switch state 3 False args=(False,) kw={} ncanvase=2
+Switch indicator state False, Closed
+handle state ('2', False, False)
+update switch state 2 False args=(False,) kw={} ncanvase=2
+Switch indicator state False, Closed
+handle state ('5', False, False)
+update switch state 5 False args=(False,) kw={} ncanvase=2
+Switch indicator state True, Open
+handle state ('4', True, False)
+update switch state 4 True args=(False,) kw={} ncanvase=2
+Switch indicator state False, Closed
+handle state ('7', False, False)
+update switch state 7 False args=(False,) kw={} ncanvase=2
+Switch indicator state True, Open
+handle state ('6', True, False)
+update switch state 6 True args=(False,) kw={} ncanvase=2
+Switch indicator state False, Closed
+handle state ('9', False, False)
+update switch state 9 False args=(False,) kw={} ncanvase=2
+Switch indicator state False, Closed
+handle state ('8', False, False)
+update switch state 8 False args=(False,) kw={} ncanvase=2
+clearing graphs
+load indicator states
+Switch indicator state True, Open
+handle state ('11', True, False)
+update switch state 11 True args=(False,) kw={} ncanvase=2
+clear isotope group
+setting isotope det=H2, iso=Ar40
+setting isotope det=H1, iso=Ar39
+setting isotope det=AX, iso=Ar38
+setting isotope det=L1, iso=Ar37
+setting isotope det=L2(CDD), iso=Ar36
+load analysis view
+position_magnet ('Ar40',) {'detector': 'H2'}
+detector Detector(H2)
+POSITION Ar40 H2
+setting detector H2 to Ar40 (39.962)
+setting detector H1 to Ar39 (38.962)
+setting detector AX to Ar38 (37.962)
+setting detector L1 to Ar37 (36.962)
+setting detector L2(CDD) to Ar36 (35.962)
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71259443e+01]
+H2 map mass to dac 39.962 >> 3.77895
+GetHighVoltage ===>> 9900
+positioning Ar40 (3.77895) on H2
+setting magnet DAC
+current  : 3.777056
+requested: 3.778950
+Delta Dac: 0.001894
+SetMagnetDAC 3.77895 ===>> OK
+Magnet settling time: 0.500
+Switch indicator state True, Open
+handle state ('10', True, False)
+update switch state 10 True args=(False,) kw={} ncanvase=2
+Switch indicator state True, Open
+handle state ('1', True, False)
+update switch state 1 True args=(False,) kw={} ncanvase=2
+Switch indicator state False, Closed
+handle state ('3', False, False)
+Magnet settling complete
+update switch state 3 False args=(False,) kw={} ncanvase=2
+set_dac. change=True
+equilibrate () {'inlet': '2', 'outlet': '1', 'eqtime': 45.0}
+Equilibration Started
+16:38:22 -- ******* Equilibration Started *******
+check software interlocks 1
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close Valve Ion Pump Set ===>> OK
+change switch state (True, True)
+update switch state 1 False args=() kw={} ncanvase=2
+16:38:22 -- CLOSE  VALVE-1 (MSIonPump)
+waiting 3s before opening inlet value ('2',)
+Switch indicator state False, Closed
+handle state ('2', False, False)
+update switch state 2 False args=(False,) kw={} ncanvase=2
+check software interlocks 2
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Switch indicator state False, Closed
+ROUT:OPEN (@102)
+handle state ('5', False, False)
+update switch state 5 False args=(False,) kw={} ncanvase=2
+change switch state (True, True)
+update switch state 2 True args=() kw={} ncanvase=2
+16:39:22 -- OPEN   VALVE-2 (ExtrToMS)
+equilibrating for 45.0sec
+set_time_zero () {}
+sniff (45.0,) {}
+py_sniff
+build tables- sniff [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group /sniff/Ar40 (Group) '' table H2
+add group /sniff/Ar39 (Group) '' table H1
+add group /sniff/Ar38 (Group) '' table AX
+add group /sniff/Ar37 (Group) '' table L1
+add group /sniff/Ar36 (Group) '' table L2(CDD)
+flush and close file /Users/labuser/Pychron/data/isotopes/8a/40f297-2310-4175-8745-14aeaa2fc346.h5
+measuring sniff. ncounts=45.0
+Switch indicator state True, Open
+handle state ('4', True, False)
+update switch state 4 True args=(False,) kw={} ncanvase=2
+Switch indicator state False, Closed
+handle state ('7', False, False)
+update switch state 7 False args=(False,) kw={} ncanvase=2
+starting measurement
+flush and close file /Users/labuser/Pychron/data/isotopes/8a/40f297-2310-4175-8745-14aeaa2fc346.h5
+_execute: Traceback (most recent call last):
+  File "/Users/labuser/Programming/pychron/pychron/pyscripts/pyscript.py", line 360, in execute_snippet
+    func(*argv)
+  File "<string>", line 49, in main
+  File "/Users/labuser/Programming/pychron/pychron/pyscripts/pyscript.py", line 135, in decorator
+    return func(obj, *args, **kw)
+  File "/Users/labuser/Programming/pychron/pychron/pyscripts/measurement_pyscript.py", line 169, in sniff
+    series=self._series_count, block=block):
+  File "/Users/labuser/Programming/pychron/pychron/pyscripts/measurement_pyscript.py", line 883, in _automated_run_call
+    return func(*args, **kw)
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/automated_run.py", line 384, in py_sniff
+    return self._sniff(ncounts, starttime, starttime_offset, series)
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/automated_run.py", line 2213, in _sniff
+    check_conditionals, sc)
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/automated_run.py", line 2274, in _measure
+    m.measure()
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/data_collector.py", line 114, in measure
+    self._measure(evt)
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/data_collector.py", line 152, in _measure
+    if not self._iter(i):
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/data_collector.py", line 179, in _iter
+    if not self._iter_hook(i):
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/multi_collector.py", line 37, in _iter_hook
+    return self._iteration(i)
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/data_collector.py", line 215, in _iteration
+    self._plot_data(i, x, k, s)
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/data_collector.py", line 379, in _plot_data
+    self._plot_data_(i, x, keys, signals)
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/data_collector.py", line 299, in _plot_data_
+    self._set_plot_data(cnt, det.isotope, det.name, x, signal)
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/data_collector.py", line 362, in _set_plot_data
+    update_graph(graph, pid, fit, self.series_idx, self.fit_series_idx)
+  File "/Users/labuser/Programming/pychron/pychron/experiment/automated_run/data_collector.py", line 356, in update_graph
+    ypadding='0.1')
+  File "/Users/labuser/Programming/pychron/pychron/graph/graph.py", line 974, in add_datum
+    names = self.series[plotid][series]
+TypeError: list indices must be integers, not NoneType
+
+Post Equilibration Started helix_pump_prep.py
+Post Measurement Started helix_pump_ms.py
+16:40:02 -- ******* Post Equilibration Started helix_pump_prep.py *******
+16:40:02 -- ******* Post Measurement Started helix_pump_ms.py *******
+testing...
+testing...
+no interpolation path defined
+no interpolation path defined
+executed snippet estimated_duration=0, duration=4.00543212891e-05
+executed snippet estimated_duration=4.0, duration=0.000159025192261
+open ('1',) {}
+close ('6',) {}
+open name=1 desc=---
+close name=6 desc=---
+check software interlocks 1
+check software interlocks 6
+interlocks []
+interlocks ['7']
+actuate state mode=None-script, software_lock=False
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+doing actuation None-script close_channel True
+Open Valve Ion Pump Set ===>> OK
+change switch state (True, True)
+update switch state 1 True args=() kw={} ncanvase=2
+16:40:02 -- OPEN   VALVE-1 (MSIonPump)
+-------------------------- open 1 () result=[(True, True)]
+Switch indicator state True, Open
+ROUT:CLOSE (@106)
+handle state ('6', True, False)
+update switch state 6 True args=(False,) kw={} ncanvase=2
+error: 'NoneType' object has no attribute 'row' group:sniff det:H2 iso:Ar40
+error: 'NoneType' object has no attribute 'row' group:sniff det:H1 iso:Ar39
+error: 'NoneType' object has no attribute 'row' group:sniff det:AX iso:Ar38
+error: 'NoneType' object has no attribute 'row' group:sniff det:L1 iso:Ar37
+error: 'NoneType' object has no attribute 'row' group:sniff det:L2(CDD) iso:Ar36
+action=open, ok=True, locked=[False]
+executed snippet estimated_duration=0, duration=20.2743980885
+helix_pump_ms.py completed successfully
+setting _ms_pumptime
+Post Measurement Finished
+16:40:23 -- ******* Post Measurement Finished *******
+----------------- finish -----------------
+state changed from measurement to failed
+----------------- stop -----------------
+Measurement Finished unsuccessfully. Aborted=False
+16:40:23 -- ******* Measurement Finished unsuccessfully. Aborted=False *******
+failed execution step Measurement Failed
+measurement did not complete successfully
+16:40:23 -- Automated run ba-01-H-21 failed duration: 7561.026 s
+----------------- finish -----------------
+----------------- stop -----------------
+finish run. runs completed=5
+write rem/ex queues
+/Users/labuser/Pychron/experiments/rem/Air.rem.txt
+/Users/labuser/Pychron/experiments/rem/Air.ex.txt
+doing event level: 3
