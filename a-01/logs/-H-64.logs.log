@@ -1,0 +1,2580 @@
+do run
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=640.48, duration=0.000229120254517
+script duration name:air seconds:640.0
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=2.31266021729e-05
+air in script context. using previous estimated duration
+script duration name:air seconds:640.0
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=28.0, duration=0.000171899795532
+Script duration 1280.0
+Run total estimated duration= 1281.000
+run duration: 0:21:21
+doing event level: 2
+----------------- start -----------------
+**************** Experiment Type: Ar/Ar, Ar/Ar
+create new session 5014442832
+close session 5014442832
+$$$$$ Clearing conditionals
+adding conditionals 
+Add queue conditionals
+add default conditionals
+adding default conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
+Start automated run a-01-H-64
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+%%%%%%%%%%%%%%%%%% setting automated run a-01-H-64
+No value "sensitivity_multiplier" in metadata
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+============================= Pre Extraction Check =============================
+loading queue conditionals pre_run_terminations
+loading system conditionals pre_run_terminations
+loading conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
+16:42:13 -- ******* Pre Extraction Check *******
+Get a measurement from the spectrometer
+Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=0.04370,5.03332,0.11050,0.12305,0.04775
+16:42:13 -- testing system defined conditionals
+Checking default pre extraction terminations n=1
+testing L2_CDD_
+evaluate ot="L2(CDD).inactive" t="L2_CDD_", ctx="{'L2_CDD_': False}"
+16:42:13 -- ******* Pre Extraction Check Passed *******
+=================================================================================
+start extraction
+do extraction
+Analysis started at 16:42:13.363888
+Extraction Started helix_air.py
+16:42:13 -- ******* Extraction Started helix_air.py *******
+state changed from not run to extraction
+DO EXTRACTION <pychron.extraction_line.pyscript_runner.PyScriptRunner object at 0x12bcced10>
+testing...
+no interpolation path defined
+executed snippet estimated_duration=222.0, duration=0.000549077987671
+Air pipette
+open ('3',) {}
+open name=3 desc=---
+check software interlocks 3
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+ROUT:OPEN (@103)
+change switch state (True, True)
+16:42:13 -- OPEN   VALVE-3 (SecondToIP)
+-------------------------- open 3 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+close ('2',) {}
+close name=2 desc=---
+check software interlocks 2
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+ROUT:CLOSE (@102)
+change switch state (True, True)
+16:42:13 -- CLOSE  VALVE-2 (ExtrToMS)
+-------------------------- close 2 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+open ('1',) {}
+open name=1 desc=---
+check software interlocks 1
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+Open Valve Ion Pump Set ===>> OK
+change switch state (True, True)
+16:42:13 -- OPEN   VALVE-1 (MSIonPump)
+-------------------------- open 1 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+close ('8',) {}
+close name=8 desc=---
+check software interlocks 8
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+ROUT:CLOSE (@108)
+change switch state (True, True)
+16:42:14 -- CLOSE  VALVE-8 (Sample1toFirst)
+-------------------------- close 8 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+close ('9',) {}
+close name=9 desc=---
+check software interlocks 9
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+ROUT:CLOSE (@109)
+change switch state (True, True)
+16:42:14 -- CLOSE  VALVE-9 (Sample2toFirst)
+-------------------------- close 9 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+close ('7',) {}
+close name=7 desc=---
+check software interlocks 7
+interlocks ['6']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+ROUT:CLOSE (@107)
+change switch state (True, True)
+16:42:14 -- CLOSE  VALVE-7 (APInner)
+-------------------------- close 7 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+open ('5',) {}
+open name=5 desc=---
+check software interlocks 5
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+ROUT:OPEN (@105)
+change switch state (True, True)
+16:42:15 -- OPEN   VALVE-5 (FirstToTurbo)
+-------------------------- open 5 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+open ('11',) {}
+open name=11 desc=---
+check software interlocks 11
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+ROUT:OPEN (@111)
+change switch state (True, True)
+16:42:15 -- OPEN   VALVE-11 (APSafety)
+-------------------------- open 11 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+open ('6',) {}
+open name=6 desc=---
+check software interlocks 6
+interlocks ['7']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@106)
+change switch state (True, True)
+16:42:15 -- OPEN   VALVE-6 (APOuter)
+-------------------------- open 6 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+sleep (15,) {}
+SLEEP 15.0
+block started
+WaitControl setup for 15.0  
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Join finished
+block finished. duration 15.0634801388
+close ('6',) {}
+close name=6 desc=---
+check software interlocks 6
+interlocks ['7']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+ROUT:CLOSE (@106)
+change switch state (True, True)
+16:42:31 -- CLOSE  VALVE-6 (APOuter)
+-------------------------- close 6 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+Join finished
+block finished. duration 2.01361513138
+Filling pipette
+open ('7',) {}
+open name=7 desc=---
+check software interlocks 7
+interlocks ['6']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@107)
+change switch state (True, True)
+16:42:33 -- OPEN   VALVE-7 (APInner)
+-------------------------- open 7 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+sleep (30,) {}
+SLEEP 30.0
+block started
+WaitControl setup for 30.0  
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Join finished
+block finished. duration 30.0969610214
+close ('7',) {}
+close name=7 desc=---
+check software interlocks 7
+interlocks ['6']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+ROUT:CLOSE (@107)
+change switch state (True, True)
+16:43:03 -- CLOSE  VALVE-7 (APInner)
+-------------------------- close 7 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+close ('5',) {}
+close name=5 desc=---
+check software interlocks 5
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+ROUT:CLOSE (@105)
+change switch state (True, True)
+16:43:04 -- CLOSE  VALVE-5 (FirstToTurbo)
+-------------------------- close 5 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+close ('4',) {}
+close name=4 desc=---
+check software interlocks 4
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel False
+ROUT:CLOSE (@104)
+change switch state (True, True)
+16:43:04 -- CLOSE  VALVE-4 (FirstToSecondStage)
+-------------------------- close 4 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+Join finished
+block finished. duration 2.01029896736
+open ('6',) {}
+open name=6 desc=---
+check software interlocks 6
+interlocks ['7']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@106)
+increment shot count 71
+saved current shot count 71
+change switch state (True, True)
+16:43:06 -- OPEN   VALVE-6 (APOuter)
+-------------------------- open 6 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+first stage cleanup
+sleep (30,) {}
+SLEEP 30.0
+block started
+WaitControl setup for 30.0  
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Join finished
+block finished. duration 30.0907821655
+close ('3',) {}
+close name=3 desc=---
+check software interlocks 3
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+ROUT:CLOSE (@103)
+change switch state (True, True)
+16:43:37 -- CLOSE  VALVE-3 (SecondToIP)
+-------------------------- close 3 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+Join finished
+block finished. duration 2.02932190895
+open ('4',) {}
+open name=4 desc=---
+check software interlocks 4
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@104)
+change switch state (True, True)
+16:43:39 -- OPEN   VALVE-4 (FirstToSecondStage)
+-------------------------- open 4 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+second stage cleanup
+sleep (30,) {}
+SLEEP 30.0
+block started
+WaitControl setup for 30.0  
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Join finished
+block finished. duration 30.0849299431
+executed snippet estimated_duration=333.0, duration=116.403357029
+helix_air.py completed successfully
+no extraction action
+Requested Output= 0.000
+Achieved Output=  0.000
+no extraction action
+no extraction action
+no extraction action
+no extraction action
+persistence save...
+persistence save - db
+AutomatedRunPersister post_extraction_save deprecated
+persistence save - dvc
+no extraction position for 
+Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
+Extraction Finished
+16:44:09 -- ******* Extraction Finished *******
+no overlap. not waiting for min ms pumptime
+start measurement
+do measurement
+L#=a-01-H analysis type=air
+Measurement Started helix_air.py
+16:44:09 -- ******* Measurement Started helix_air.py *******
+state changed from extraction to measurement
+setting spec, defl, and gains
+GetExtractionLens ===>> 18.29
+GetYSymmetry ===>> 19.07
+GetZSymmetry ===>> 19.51
+GetZFocus ===>> 9.74
+GetDeflection L2(CDD) ===>> Error: Invalid Command
+Failed reading L2(CDD) deflection. Error=could not convert string to float: Error: Invalid Command. Using previous value 0
+GetGain H2 ===>> 0.986484670899424
+GetGain H1 ===>> 1.01080515922087
+GetGain AX ===>> 1.0071313708941
+GetGain L1 ===>> 1.00793592600847
+GetGain L2(CDD) ===>> 0
+pre measurement save
+New frame /Users/labuser/Pychron/data/isotopes/94/3dcd41-4120-4620-a536-63642c9df994.h5
+flush and close file /Users/labuser/Pychron/data/isotopes/94/3dcd41-4120-4620-a536-63642c9df994.h5
+testing...
+no interpolation path defined
+executed snippet estimated_duration=640.48, duration=0.000273942947388
+activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2(CDD)') {}
+activate detectors
+*************** Set Analysis View Ar/Ar
+create graphs
+clearing graphs
+clear isotope group
+setting isotope det=H2, iso=Ar40
+setting isotope det=H1, iso=Ar39
+setting isotope det=AX, iso=Ar38
+setting isotope det=L1, iso=Ar37
+setting isotope det=L2(CDD), iso=Ar36
+setting previous blanks
+ - setting Ar40 blank 46.08+/-0.04
+ - setting Ar36 blank 0.1703+/-0.0013
+ - setting Ar37 blank 0.056+/-0.018
+ - setting Ar38 blank 0.109+/-0.019
+ - setting Ar39 blank -0.003+/-0.022
+load analysis view
+position_magnet ('Ar40',) {'detector': 'H2'}
+detector Detector(H2)
+POSITION Ar40 H2
+setting detector H2 to Ar40 (39.962)
+setting detector H1 to Ar39 (38.962)
+setting detector AX to Ar38 (37.962)
+setting detector L1 to Ar37 (36.962)
+setting detector L2(CDD) to Ar36 (35.962)
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260145e+01]
+H2 map mass to dac 39.962 >> 3.7790202004
+GetHighVoltage ===>> 9900
+positioning Ar40 (3.7790202004) on H2
+setting magnet DAC
+current  : 3.779020
+requested: 3.779020
+Delta Dac: 0.000000
+SetMagnetDAC 3.7790202004 ===>> OK
+set_dac. change=False
+equilibrate () {'inlet': '2', 'outlet': '1', 'eqtime': 30.0}
+Equilibration Started
+16:44:10 -- ******* Equilibration Started *******
+check software interlocks 1
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Close Valve Ion Pump Set ===>> OK
+change switch state (True, True)
+16:44:10 -- CLOSE  VALVE-1 (MSIonPump)
+waiting 3s before opening inlet value ('2',)
+update labels <pychron.experiment.plot_panel.PlotPanel object at 0x1368ba110>
+update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x141bd8290>"
+setting label 0 H2 Ar40
+setting label 1 H1 Ar39
+setting label 2 AX Ar38
+setting label 3 L1 Ar37
+setting label 4 L2(CDD) Ar36
+update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x1368f2470>"
+setting label 0 H2 Ar40
+setting label 1 H1 Ar39
+setting label 2 AX Ar38
+setting label 3 L1 Ar37
+setting label 4 L2(CDD) Ar36
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+check software interlocks 2
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@102)
+change switch state (True, True)
+16:44:13 -- OPEN   VALVE-2 (ExtrToMS)
+equilibrating for 30.0sec
+set_time_zero () {}
+sniff (30.0,) {}
+py_sniff
+build tables- sniff [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group /sniff/Ar40 (Group) '' table H2
+add group /sniff/Ar39 (Group) '' table H1
+add group /sniff/Ar38 (Group) '' table AX
+add group /sniff/Ar37 (Group) '' table L1
+add group /sniff/Ar36 (Group) '' table L2(CDD)
+flush and close file /Users/labuser/Pychron/data/isotopes/94/3dcd41-4120-4620-a536-63642c9df994.h5
+measuring sniff. ncounts=30.0
+"sniff" increment series count="1" fit count="0" regressing="False"
+starting measurement
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:44:38 -- collecting point 25
+Equilibration Finished
+16:44:43 -- ******* Equilibration Finished *******
+check software interlocks 2
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+ROUT:CLOSE (@102)
+load indicator states
+change switch state (True, True)
+16:44:44 -- CLOSE  VALVE-2 (ExtrToMS)
+Post Equilibration Started helix_pump_prep.py
+16:44:44 -- ******* Post Equilibration Started helix_pump_prep.py *******
+testing...
+no interpolation path defined
+executed snippet estimated_duration=28.0, duration=0.000188112258911
+close ('6',) {}
+close name=6 desc=---
+check software interlocks 6
+interlocks ['7']
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+Switch indicator state True, Open
+ROUT:CLOSE (@106)
+Switch indicator state True, Open
+Switch indicator state False, Closed
+change switch state (True, True)
+16:44:44 -- CLOSE  VALVE-6 (APOuter)
+-------------------------- close 6 () result=[(True, True)]
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+action=close, ok=True, locked=[False]
+open ('4',) {}
+open name=4 desc=---
+check software interlocks 4
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+ROUT:OPEN (@104)
+change switch state (True, True)
+16:44:44 -- OPEN   VALVE-4 (FirstToSecondStage)
+-------------------------- open 4 () result=[(True, True)]
+waiting for write to finish
+measurement finished
+estimated time: 30.000 actual time: :30.158
+flush and close file /Users/labuser/Pychron/data/isotopes/94/3dcd41-4120-4620-a536-63642c9df994.h5
+set_fits () {}
+using default fits file=/Users/labuser/Pychron/scripts/measurement/fits/nominal.yaml
+set "Ar40" to "('Parabolic', 'SEM')"
+set "Ar36" to "('Parabolic', 'SEM')"
+set "Ar37" to "('Linear', 'SEM')"
+set "Ar38" to "('Linear', 'SEM')"
+set "Ar39" to "('Linear', 'SEM')"
+set_baseline_fits () {}
+using default fits file=/Users/labuser/Pychron/scripts/measurement/fits/nominal.yaml
+set "H2" to "('Average', 'SEM')"
+set "L2(CDD)" to "('Average', 'SEM')"
+set "L1" to "('Average', 'SEM')"
+set "AX" to "('Average', 'SEM')"
+set "H1" to "('Average', 'SEM')"
+multicollect () {'ncounts': 400}
+build tables- signal [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group /signal/Ar40 (Group) '' table H2
+add group /signal/Ar39 (Group) '' table H1
+add group /signal/Ar38 (Group) '' table AX
+add group /signal/Ar37 (Group) '' table L1
+add group /signal/Ar36 (Group) '' table L2(CDD)
+flush and close file /Users/labuser/Pychron/data/isotopes/94/3dcd41-4120-4620-a536-63642c9df994.h5
+measuring signal. ncounts=400
+action=open, ok=True, locked=[False]
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+"signal" increment series count="2" fit count="1" regressing="True"
+starting measurement
+Join finished
+block finished. duration 2.02929520607
+open ('11',) {}
+open name=11 desc=---
+check software interlocks 11
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel False
+ROUT:OPEN (@111)
+change switch state (True, True)
+16:44:46 -- OPEN   VALVE-11 (APSafety)
+-------------------------- open 11 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+open ('5',) {}
+open name=5 desc=---
+check software interlocks 5
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@105)
+change switch state (True, True)
+16:44:47 -- OPEN   VALVE-5 (FirstToTurbo)
+-------------------------- open 5 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+sleep (10,) {}
+SLEEP 10.0
+block started
+WaitControl setup for 10.0  
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Join finished
+block finished. duration 10.0537090302
+close ('4',) {}
+close name=4 desc=---
+check software interlocks 4
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+ROUT:CLOSE (@104)
+change switch state (True, True)
+16:44:57 -- CLOSE  VALVE-4 (FirstToSecondStage)
+-------------------------- close 4 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+Join finished
+block finished. duration 2.01438212395
+open ('3',) {}
+open name=3 desc=---
+check software interlocks 3
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@103)
+change switch state (True, True)
+16:44:59 -- OPEN   VALVE-3 (SecondToIP)
+-------------------------- open 3 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+executed snippet estimated_duration=42.0, duration=15.9459438324
+helix_pump_prep.py completed successfully
+Post Equilibration Finished
+16:44:59 -- ******* Post Equilibration Finished *******
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:45:09 -- collecting point 25
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:45:34 -- collecting point 50
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:45:59 -- collecting point 75
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:46:24 -- collecting point 100
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:46:49 -- collecting point 125
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:47:14 -- collecting point 150
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:47:39 -- collecting point 175
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:48:04 -- collecting point 200
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:48:29 -- collecting point 225
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:48:54 -- collecting point 250
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:49:19 -- collecting point 275
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:49:45 -- collecting point 300
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:50:10 -- collecting point 325
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:50:35 -- collecting point 350
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:51:00 -- collecting point 375
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:51:25 -- collecting point 400
+waiting for write to finish
+measurement finished
+estimated time: 400.000 actual time: :401.338
+flush and close file /Users/labuser/Pychron/data/isotopes/94/3dcd41-4120-4620-a536-63642c9df994.h5
+baselines () {'detector': 'H2', 'mass': 39.59, 'ncounts': 120}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Baseline
+build tables- baseline [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group baseline table H2
+add group baseline table H1
+add group baseline table AX
+add group baseline table L1
+add group baseline table L2(CDD)
+flush and close file /Users/labuser/Pychron/data/isotopes/94/3dcd41-4120-4620-a536-63642c9df994.h5
+detector Detector(H2)
+POSITION 39.59 H2
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260145e+01]
+H2 map mass to dac 39.59 >> 3.7159692075
+GetHighVoltage ===>> 9900
+positioning 39.59 (3.7159692075) on H2
+setting magnet DAC
+current  : 3.779020
+requested: 3.715969
+Delta Dac: 0.063051
+SetMagnetDAC 3.7159692075 ===>> OK
+Magnet settling time: 0.500
+Magnet settling complete
+set_dac. change=True
+Delaying 4s for detectors to settle
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Join finished
+measuring baseline. ncounts=120
+"baseline" increment series count="2" fit count="1" regressing="True"
+starting measurement
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:51:55 -- collecting point 25
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:52:20 -- collecting point 50
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+16:52:45 -- collecting point 75
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+16:53:10 -- collecting point 100
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+waiting for write to finish
+measurement finished
+estimated time: 120.000 actual time: :120.542
+flush and close file /Users/labuser/Pychron/data/isotopes/94/3dcd41-4120-4620-a536-63642c9df994.h5
+activate_detectors ('L2(CDD)', 'AX') {'peak_center': True}
+peak_center () {'detector': 'H2', 'isotope': 'Ar40'}
+peak center: mean=4906.03493137 threshold=3
+peak center started
+setup peak center. detector=['H2', 'L2(CDD)', 'AX'], isotope=Ar40
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x136433050>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1320799b0>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x136433050>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1320799b0>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x136433050>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1320799b0>]
+setting integration time = 1.048576
+SetIntegrationTime 1.048576 ===>> OK
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260145e+01]
+H2 map mass to dac 39.962 >> 3.7790202004
+GetHighVoltage ===>> 9900
+do peak center. <pychron.spectrometer.jobs.peak_center.PeakCenter object at 0x13203bef0>
+doing pc
+starting peak center. center dac= 3.7790202004 step_width=5e-05
+width = 5e-05
+get scan parameters. half-width=0.0025,window=0.0025, i=0, scalar=1
+Scan parameters center=3.77902 width=0.00500 (3.77652 - 3.78152)
+Moving to starting dac 3.7765202004
+setting magnet DAC
+current  : 3.715969
+requested: 3.776520
+Delta Dac: 0.060551
+SetMagnetDAC 3.7765202004 ===>> OK
+Magnet settling time: 0.500
+Magnet settling complete
+set_dac. change=True
+Wait until signal near baseline. tol= -0.048116024241. timeout= 10
+Peak center baseline intensity achieved
+_do_sweep sm= 3.7765202004, em= 3.7815202004, stm= 5e-05
+calculated step values: start=3.7765202004, end=3.7815202004, width=5e-05, nsteps=101.0
+setting magnet DAC
+current  : 3.776520
+requested: 3.776520
+Delta Dac: 0.000000
+set_dac. change=False
+setting magnet DAC
+current  : 3.776520
+requested: 3.776571
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776571
+requested: 3.776621
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776621
+requested: 3.776672
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776672
+requested: 3.776722
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776722
+requested: 3.776773
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776773
+requested: 3.776823
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776823
+requested: 3.776874
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776874
+requested: 3.776924
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776924
+requested: 3.776975
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776975
+requested: 3.777025
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777025
+requested: 3.777076
+============ Exception ==============
+Delta Dac: 0.000051
+Traceback (most recent call last):
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/qt4/base_window.py", line 198, in paintEvent
+    self.handler.paintEvent(event)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/qt4/base_window.py", line 50, in paintEvent
+    self._enable_window._paint(event)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/abstract_window.py", line 467, in _paint
+    self.component.draw(gc, view_bounds=(0, 0, size[0], size[1]))
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 421, in draw
+    self._draw(gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 773, in _draw
+    self._dispatch_draw(layer, gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 327, in _dispatch_draw
+    component._dispatch_draw(layer, gc, new_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 312, in _dispatch_draw
+    my_handler(gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 352, in _draw_container_underlay
+    self._draw_underlay(gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 881, in _draw_underlay
+    underlay.overlay(self, gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/chaco/grid.py", line 306, in overlay
+    self._draw_component(gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/chaco/grid.py", line 344, in _draw_component
+    ends[:,0] = self._tick_extents[:,1]
+IndexError: too many indices for array
+============ End Exception ==========
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777076
+requested: 3.777126
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777126
+requested: 3.777177
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777177
+requested: 3.777227
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+Switch indicator state False, Closed
+setting magnet DAC
+current  : 3.777227
+requested: 3.777278
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777278
+requested: 3.777328
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777328
+requested: 3.777379
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777379
+requested: 3.777429
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777429
+requested: 3.777480
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777480
+requested: 3.777530
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777530
+requested: 3.777581
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777581
+requested: 3.777631
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777631
+requested: 3.777682
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777682
+requested: 3.777732
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777732
+requested: 3.777783
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777783
+requested: 3.777833
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777833
+requested: 3.777884
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777884
+requested: 3.777934
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777934
+requested: 3.777985
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777985
+requested: 3.778035
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778035
+requested: 3.778086
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778086
+requested: 3.778136
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778136
+requested: 3.778187
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778187
+requested: 3.778237
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778237
+requested: 3.778288
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778288
+requested: 3.778338
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778338
+requested: 3.778389
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778389
+requested: 3.778439
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778439
+requested: 3.778490
+Delta Dac: 0.000051
+Switch indicator state False, Closed
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778490
+requested: 3.778540
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778540
+requested: 3.778591
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778591
+requested: 3.778641
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778641
+requested: 3.778692
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778692
+requested: 3.778742
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778742
+requested: 3.778793
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778793
+requested: 3.778843
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778843
+requested: 3.778894
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778894
+requested: 3.778944
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778944
+requested: 3.778995
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778995
+requested: 3.779045
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779045
+requested: 3.779096
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779096
+requested: 3.779146
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779146
+requested: 3.779197
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779197
+requested: 3.779247
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779247
+requested: 3.779298
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779298
+requested: 3.779348
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779348
+requested: 3.779399
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779399
+requested: 3.779449
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779449
+requested: 3.779500
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779500
+requested: 3.779551
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779551
+requested: 3.779601
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779601
+requested: 3.779652
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779652
+requested: 3.779702
+Delta Dac: 0.000051
+Switch indicator state False, Closed
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779702
+requested: 3.779753
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779753
+requested: 3.779803
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779803
+requested: 3.779854
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779854
+requested: 3.779904
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779904
+requested: 3.779955
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779955
+requested: 3.780005
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780005
+requested: 3.780056
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780056
+requested: 3.780106
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780106
+requested: 3.780157
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780157
+requested: 3.780207
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780207
+requested: 3.780258
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780258
+requested: 3.780308
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780308
+requested: 3.780359
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780359
+requested: 3.780409
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780409
+requested: 3.780460
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780460
+requested: 3.780510
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780510
+requested: 3.780561
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780561
+requested: 3.780611
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780611
+requested: 3.780662
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780662
+requested: 3.780712
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780712
+requested: 3.780763
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780763
+requested: 3.780813
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780813
+requested: 3.780864
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780864
+requested: 3.780914
+Delta Dac: 0.000051
+Switch indicator state False, Closed
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780914
+requested: 3.780965
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780965
+requested: 3.781015
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781015
+requested: 3.781066
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781066
+requested: 3.781116
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781116
+requested: 3.781167
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781167
+requested: 3.781217
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781217
+requested: 3.781268
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781268
+requested: 3.781318
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781318
+requested: 3.781369
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Switch indicator state True, Open
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state True, Open
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Switch indicator state False, Closed
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781369
+requested: 3.781419
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781419
+requested: 3.781470
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781470
+requested: 3.781520
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+result of _do_sweep=True
+result of _calculate_peak_center=([3.7775472545089963, 3.7790252104208197, 3.7805031663326432], [894.17408176284709, 4780.0338956949063, 901.5511857585052], 3.7790051703406595, 4780.0338956949063)
+new center pos Detector(H2) (Ar40) @ 3.77902521042
+GetHighVoltage ===>> 9900
+dac uncorrected for HV and deflection 3.77902521042
+update mftable H2 Ar40 3.77902521042 message=automated run peakcenter
+get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
+sweep finished
+get initial guess parabolic
+get initial guess parabolic
+dump mftable to /Users/labuser/Pychron/setupfiles/spectrometer/mftables/mftable.csv
+setting magnet DAC
+current  : 3.781520
+requested: 3.779025
+Delta Dac: 0.002495
+SetMagnetDAC 3.77902521042 ===>> OK
+Magnet settling time: 0.500
+Magnet settling complete
+set_dac. change=True
+setting integration time = 0.524288
+SetIntegrationTime 0.524288 ===>> OK
+flush and close file /Users/labuser/Pychron/data/isotopes/94/3dcd41-4120-4620-a536-63642c9df994.h5
+executed snippet estimated_duration=640.48, duration=776.676711082
+helix_air.py completed successfully
+Measurement Finished
+16:57:06 -- ******* Measurement Finished *******
+Post Measurement Started helix_pump_ms.py
+16:57:06 -- ******* Post Measurement Started helix_pump_ms.py *******
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=3.00407409668e-05
+open ('1',) {}
+open name=1 desc=---
+check software interlocks 1
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+Open Valve Ion Pump Set ===>> OK
+change switch state (True, True)
+16:57:06 -- OPEN   VALVE-1 (MSIonPump)
+-------------------------- open 1 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+executed snippet estimated_duration=0, duration=0.27588391304
+helix_pump_ms.py completed successfully
+setting _ms_pumptime
+Post Measurement Finished
+16:57:06 -- ******* Post Measurement Finished *******
+$$$$$$$$$$$$$$$$$$$$ state at run end measurement
+state changed from measurement to success
+post measurement save measured=True aborted=False
+Set filtering
+setting fod for Ar40= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for H2= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar36= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for L2(CDD)= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar37= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for L1= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar38= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for AX= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for Ar39= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+setting fod for H1= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
+persistence save...
+persistence save - db
+post measurement save
+5432070320 connecting to database sqlite:////Users/labuser/Pychron/.appdata/local_lab.db
+connected to db sqlite:////Users/labuser/Pychron/.appdata/local_lab.db
+create new session 5432070320
+close session 5432070320
+No database instance. Not saving post measurement to isotopedb database
+$$$$$$$$$$$$$$$ auto_save_detector_ic=False
+persistence save - dvc
+================= post measurement started
+create new session 4996251088
+close session 4996251088
+---------------- Experiment Queue saving disabled
+DVC saving peakcenter
+Popen(['git', 'fetch', 'origin'], cwd=/Users/labuser/Pychron/data/.dvc/repositories/Helix_air180, universal_newlines=False, shell=None)
+Popen(['git', 'status', '-sb'], cwd=/Users/labuser/Pychron/data/.dvc/repositories/Helix_air180, universal_newlines=False, shell=None)
+Smart pull ahead: 0 behind: 0
+Up-to-date with origin
+add to repo msg=modified - 1c6e5fb378bc6dbb9454a3742cfd71c48f11ca0a.json
+add to repo msg=modified - -H-64.json
+add to repo msg=modified - -H-64.dat.json
+add to repo msg=modified - -H-64.blan.json
+add to repo msg=modified - -H-64.inte.json
+add to repo msg=modified - -H-64.icfa.json
+load indicator states
+add to repo msg=modified - -H-64.base.json
+Switch indicator state True, Open
+not at valid file /Users/labuser/Pychron/data/.dvc/repositories/Helix_air180/a-01/tags/-H-64.tags.json
+add to repo msg=modified - -H-64.peak.json
+Switch indicator state True, Open
+add to repo msg=modified - -H-64.extr.json
+Switch indicator state True, Open
+Switch indicator state True, Open
+not at valid file /Users/labuser/Pychron/data/.dvc/repositories/Helix_air180/a-01/monitor/-H-64.moni.json
+commit message=<COLLECTION>
+Switch indicator state False, Closed
+Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/labuser/Pychron/data/.dvc/repositories/Helix_air180, universal_newlines=False, shell=None)
+Switch indicator state True, Open
+Popen(['git', 'cat-file', '--batch'], cwd=/Users/labuser/Pychron/data/.dvc/repositories/Helix_air180, universal_newlines=False, shell=None)
+Switch indicator state False, Closed
+add to repo msg=modified - -H-64.inte.json
+Switch indicator state False, Closed
+add to repo msg=modified - -H-64.base.json
+Switch indicator state False, Closed
+commit message=<ISOEVO> default collection fits
+Switch indicator state False, Closed
+add to repo msg=modified - -H-64.blan.json
+Switch indicator state False, Closed
+commit message=<BLANKS> preceding ba-01-H-34
+add to repo msg=modified - -H-64.icfa.json
+commit message=<ICFactor> default
+push repository <pychron.git_archive.repo_manager.GitRepoManager object at 0x13ae02fb0>
+pushing to remote=origin, url=https://github.com
+Popen(['git', 'push', 'origin', 'master'], cwd=/Users/labuser/Pychron/data/.dvc/repositories/Helix_air180, universal_newlines=False, shell=None)
+Popen(['git', 'fetch', 'origin'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
+Popen(['git', 'status', '-sb'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
+Popen(['git', 'diff', 'HEAD', '--name-only'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
+no changes to meta repo
+Popen(['git', 'push', 'origin', 'master'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
+create new session 4996251088
+add association Helix_air180
+get identifier "a-01-H"
+setting analysis irradiation position=<pychron.dvc.dvc_orm.IrradiationPositionTbl object at 0x15e02b910>
+close session 4996251088
+================= post measurement finished
+16:57:13 -- ******* Post Run Check *******
+loading queue conditionals post_run_actions
+loading system conditionals post_run_actions
+loading conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
+loading queue conditionals post_run_terminations
+loading system conditionals post_run_terminations
+loading conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
+16:57:13 -- ******* Post Run Check Passed *******
+16:57:13 -- Automated run a-01-H-64 success duration: 900.745 s
+----------------- finish -----------------
+----------------- stop -----------------
+retroactive repository identifiers disabled
+finish run. runs completed=29
+update duration runid=a-01-H-64, duration=900.74506712, md5=060fae79
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=640.48, duration=0.000283002853394
+script duration name:air seconds:640.0
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=0, duration=3.50475311279e-05
+air in script context. using previous estimated duration
+script duration name:air seconds:640.0
+loading script "helix_air.py"
+loading script "helix_pump_ms.py"
+loading script "helix_air.py"
+loading script "helix_pump_prep.py"
+testing...
+no interpolation path defined
+executed snippet estimated_duration=28.0, duration=0.000203132629395
+Script duration 1280.0
+Run total estimated duration= 1281.000
+nruns=1 before=5.0, run_dur=1281.0, btw=0.0
+write rem/ex queues
+/Users/labuser/Pychron/experiments/rem/Air.rem.txt
+/Users/labuser/Pychron/experiments/rem/Air.ex.txt
+doing event level: 3
