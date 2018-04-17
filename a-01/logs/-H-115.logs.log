@@ -5,7 +5,7 @@ loading script "helix_air.py"
 loading script "helix_pump_prep.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=656.08, duration=0.000236988067627
+executed snippet estimated_duration=656.08, duration=0.00023889541626
 script duration name:air seconds:656.0
 loading script "helix_air.py"
 loading script "helix_pump_ms.py"
@@ -22,7 +22,7 @@ loading script "helix_air.py"
 loading script "helix_pump_prep.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=28.0, duration=0.000198841094971
+executed snippet estimated_duration=28.0, duration=0.000200986862183
 Script duration 1312.0
 Run total estimated duration= 1313.000
 run duration: 0:21:53
@@ -46,25 +46,25 @@ $$$$$$$$$$$$$$$ auto_save_detector_ic=False
 loading queue conditionals pre_run_terminations
 loading system conditionals pre_run_terminations
 loading conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
-15:05:09 -- ******* Pre Extraction Check *******
+15:33:20 -- ******* Pre Extraction Check *******
 Get a measurement from the spectrometer
-Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=-0.00000,-0.12805,0.32583,-0.47545,-0.18102
-15:05:09 -- testing system defined conditionals
+Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=-0.00000,-0.29202,0.34075,-0.24180,-0.10469
+15:33:20 -- testing system defined conditionals
 Checking default pre extraction terminations n=1
 testing L2_CDD_
 evaluate ot="L2(CDD).inactive" t="L2_CDD_", ctx="{'L2_CDD_': False}"
-15:05:09 -- ******* Pre Extraction Check Passed *******
+15:33:20 -- ******* Pre Extraction Check Passed *******
 =================================================================================
 start extraction
 do extraction
-Analysis started at 15:05:09.537743
+Analysis started at 15:33:20.945096
 Extraction Started helix_air.py
-15:05:09 -- ******* Extraction Started helix_air.py *******
+15:33:20 -- ******* Extraction Started helix_air.py *******
 state changed from not run to extraction
 DO EXTRACTION <pychron.extraction_line.pyscript_runner.PyScriptRunner object at 0x12c6ced70>
 testing...
 no interpolation path defined
-executed snippet estimated_duration=222.0, duration=0.000533103942871
+executed snippet estimated_duration=222.0, duration=0.000532865524292
 Air pipette
 open ('3',) {}
 open name=3 desc=---
@@ -74,7 +74,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 ROUT:OPEN (@103)
 change switch state (True, True)
-15:05:09 -- OPEN   VALVE-3 (SecondToIP)
+15:33:20 -- OPEN   VALVE-3 (SecondToIP)
 -------------------------- open 3 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 close ('2',) {}
@@ -85,7 +85,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 ROUT:CLOSE (@102)
 change switch state (True, True)
-15:05:09 -- CLOSE  VALVE-2 (ExtrToMS)
+15:33:21 -- CLOSE  VALVE-2 (ExtrToMS)
 -------------------------- close 2 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 open ('1',) {}
@@ -96,370 +96,31 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 Open Valve Ion Pump Set ===>> OK
 change switch state (True, True)
-15:05:10 -- OPEN   VALVE-1 (MSIonPump)
+15:33:21 -- OPEN   VALVE-1 (MSIonPump)
 -------------------------- open 1 () result=[(True, True)]
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=46
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
 action=open, ok=True, locked=[False]
 close ('8',) {}
 close name=8 desc=---
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
 check software interlocks 8
-executor executable False
 interlocks []
-stats calculated
 actuate state mode=None-script, software_lock=False
-get all runs n=47
 doing actuation None-script close_channel False
-updating stats
 ROUT:CLOSE (@108)
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=48
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=49
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
 change switch state (True, True)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-15:05:10 -- CLOSE  VALVE-8 (Sample1toFirst)
+15:33:21 -- CLOSE  VALVE-8 (Sample1toFirst)
 -------------------------- close 8 () result=[(True, True)]
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=50
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=51
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=52
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=53
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=54
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=55
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=56
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=57
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=58
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=59
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=60
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=61
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=62
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=63
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=64
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=65
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=66
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=67
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=68
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=69
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=70
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=71
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=72
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
+load indicator states
 action=close, ok=True, locked=[False]
-executor executable True
 close ('9',) {}
-stats calculated
 close name=9 desc=---
-get all runs n=73
-updating stats
 check software interlocks 9
-setting executable True
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 ROUT:CLOSE (@109)
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=74
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=75
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
 change switch state (True, True)
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-15:05:10 -- CLOSE  VALVE-9 (Sample2toFirst)
-executor executable True
+15:33:22 -- CLOSE  VALVE-9 (Sample2toFirst)
 -------------------------- close 9 () result=[(True, True)]
-stats calculated
-get all runs n=76
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=77
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=78
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 41
-update runs
-executor executable True
-stats calculated
-get all runs n=79
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
 action=close, ok=True, locked=[False]
 close ('7',) {}
 close name=7 desc=---
@@ -469,7 +130,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 ROUT:CLOSE (@107)
 change switch state (True, True)
-15:05:11 -- CLOSE  VALVE-7 (APInner)
+15:33:22 -- CLOSE  VALVE-7 (APInner)
 -------------------------- close 7 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 open ('5',) {}
@@ -480,7 +141,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 ROUT:OPEN (@105)
 change switch state (True, True)
-15:05:11 -- OPEN   VALVE-5 (FirstToTurbo)
+15:33:22 -- OPEN   VALVE-5 (FirstToTurbo)
 -------------------------- open 5 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 open ('11',) {}
@@ -491,7 +152,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 ROUT:OPEN (@111)
 change switch state (True, True)
-15:05:11 -- OPEN   VALVE-11 (APSafety)
+15:33:23 -- OPEN   VALVE-11 (APSafety)
 -------------------------- open 11 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 open ('6',) {}
@@ -502,7 +163,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@106)
 change switch state (True, True)
-15:05:11 -- OPEN   VALVE-6 (APOuter)
+15:33:23 -- OPEN   VALVE-6 (APOuter)
 -------------------------- open 6 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 sleep (15,) {}
@@ -510,1559 +171,8 @@ SLEEP 15.0
 block started
 WaitControl setup for 15.0  
 load indicator states
-len selected runs 1
-cloning run ba-01-H-00. set_labnumber=True, set_position=True
-calculating time of run ba-01-H-00
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=656.08, duration=0.00019097328186
-script duration name:air seconds:656.0
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=0, duration=2.19345092773e-05
-air in script context. using previous estimated duration
-script duration name:air seconds:656.0
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=28.0, duration=0.000164985656738
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-pump_ms in script context. using previous estimated duration
-script duration name:air seconds:656.0
-pump_prep in script context. using previous estimated duration
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-nruns=78 before=5.0, run_dur=102414.0, btw=2310.0
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=656.08, duration=0.000211954116821
-script duration name:air seconds:656.0
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=0, duration=2.31266021729e-05
-air in script context. using previous estimated duration
-script duration name:air seconds:656.0
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=28.0, duration=0.000256061553955
-Script duration 1312.0
-Run total estimated duration= 1313.000
-run duration: 1313.0
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=80
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=81
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=82
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=83
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=84
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=85
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=86
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=87
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=88
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=89
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=90
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=91
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=92
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=93
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=94
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=95
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=96
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=97
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=98
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=99
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=100
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=101
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=102
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=103
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=104
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=105
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=106
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=107
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=108
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=109
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=110
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=111
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=112
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 75
-update runs
-executor executable True
-stats calculated
-get all runs n=113
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-len selected runs 1
-cloning run ba-01-H-00. set_labnumber=True, set_position=True
-calculating time of run ba-01-H-00
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=656.08, duration=0.000185012817383
-script duration name:air seconds:656.0
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=0, duration=2.19345092773e-05
-air in script context. using previous estimated duration
-script duration name:air seconds:656.0
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=28.0, duration=0.000164985656738
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-pump_ms in script context. using previous estimated duration
-script duration name:air seconds:656.0
-pump_prep in script context. using previous estimated duration
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-nruns=112 before=5.0, run_dur=147056.0, btw=3330.0
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=656.08, duration=0.000277042388916
-script duration name:air seconds:656.0
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=0, duration=2.59876251221e-05
-air in script context. using previous estimated duration
-script duration name:air seconds:656.0
-loading script "helix_air.py"
-loading script "helix_pump_ms.py"
-loading script "helix_air.py"
-loading script "helix_pump_prep.py"
-testing...
-no interpolation path defined
-executed snippet estimated_duration=28.0, duration=0.000172853469849
-Script duration 1312.0
-Run total estimated duration= 1313.000
-run duration: 1313.0
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=114
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=115
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=116
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=117
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=118
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=119
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=120
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=121
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=122
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=123
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=124
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=125
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=126
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=127
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=128
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=129
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=130
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=131
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=132
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=133
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=134
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=135
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=136
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=137
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=138
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=139
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=140
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=141
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=142
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=143
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=144
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=145
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=146
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-SSSSSSSSSSSSSS set AR scroll to 109
-update runs
-executor executable True
-stats calculated
-get all runs n=147
-updating stats
-setting executable True
-Info for ba-01-H=('REFERENCES', 'blank_air', 'Gas', 'NoIrradiation', 'A', 1)
-Info for a-01-H=('REFERENCES', 'air', 'Gas', 'NoIrradiation', 'A', 2)
-info updated
-load indicator states
 Join finished
-block finished. duration 15.0533490181
+block finished. duration 15.0709061623
 close ('6',) {}
 close name=6 desc=---
 check software interlocks 6
@@ -2071,7 +181,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@106)
 change switch state (True, True)
-15:05:27 -- CLOSE  VALVE-6 (APOuter)
+15:33:38 -- CLOSE  VALVE-6 (APOuter)
 -------------------------- close 6 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 sleep (2,) {}
@@ -2079,7 +189,7 @@ SLEEP 2.0
 block started
 WaitControl setup for 2.0  
 Join finished
-block finished. duration 2.01699399948
+block finished. duration 2.03699398041
 Filling pipette
 open ('7',) {}
 open name=7 desc=---
@@ -2089,7 +199,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@107)
 change switch state (True, True)
-15:05:29 -- OPEN   VALVE-7 (APInner)
+15:33:41 -- OPEN   VALVE-7 (APInner)
 -------------------------- open 7 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 sleep (30,) {}
@@ -2100,7 +210,7 @@ load indicator states
 load indicator states
 load indicator states
 Join finished
-block finished. duration 30.0801091194
+block finished. duration 30.1521060467
 close ('7',) {}
 close name=7 desc=---
 check software interlocks 7
@@ -2109,7 +219,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@107)
 change switch state (True, True)
-15:05:59 -- CLOSE  VALVE-7 (APInner)
+15:34:11 -- CLOSE  VALVE-7 (APInner)
 -------------------------- close 7 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 close ('5',) {}
@@ -2120,7 +230,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@105)
 change switch state (True, True)
-15:06:00 -- CLOSE  VALVE-5 (FirstToTurbo)
+15:34:11 -- CLOSE  VALVE-5 (FirstToTurbo)
 -------------------------- close 5 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 close ('4',) {}
@@ -2131,15 +241,16 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 ROUT:CLOSE (@104)
 change switch state (True, True)
-15:06:00 -- CLOSE  VALVE-4 (FirstToSecondStage)
+15:34:12 -- CLOSE  VALVE-4 (FirstToSecondStage)
 -------------------------- close 4 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 sleep (2,) {}
 SLEEP 2.0
 block started
 WaitControl setup for 2.0  
+load indicator states
 Join finished
-block finished. duration 2.03011107445
+block finished. duration 2.02185606956
 open ('6',) {}
 open name=6 desc=---
 check software interlocks 6
@@ -2147,10 +258,10 @@ interlocks ['7']
 actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@106)
-increment shot count 149
-saved current shot count 149
+increment shot count 150
+saved current shot count 150
 change switch state (True, True)
-15:06:02 -- OPEN   VALVE-6 (APOuter)
+15:34:14 -- OPEN   VALVE-6 (APOuter)
 -------------------------- open 6 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 first stage cleanup
@@ -2162,7 +273,7 @@ load indicator states
 load indicator states
 load indicator states
 Join finished
-block finished. duration 30.0965189934
+block finished. duration 30.0879750252
 close ('3',) {}
 close name=3 desc=---
 check software interlocks 3
@@ -2171,7 +282,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@103)
 change switch state (True, True)
-15:06:33 -- CLOSE  VALVE-3 (SecondToIP)
+15:34:44 -- CLOSE  VALVE-3 (SecondToIP)
 -------------------------- close 3 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 sleep (2,) {}
@@ -2179,7 +290,7 @@ SLEEP 2.0
 block started
 WaitControl setup for 2.0  
 Join finished
-block finished. duration 2.00981211662
+block finished. duration 2.00571680069
 open ('4',) {}
 open name=4 desc=---
 check software interlocks 4
@@ -2188,7 +299,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@104)
 change switch state (True, True)
-15:06:35 -- OPEN   VALVE-4 (FirstToSecondStage)
+15:34:47 -- OPEN   VALVE-4 (FirstToSecondStage)
 -------------------------- open 4 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 second stage cleanup
@@ -2200,8 +311,8 @@ load indicator states
 load indicator states
 load indicator states
 Join finished
-block finished. duration 30.0972669125
-executed snippet estimated_duration=333.0, duration=116.331447124
+block finished. duration 30.1001639366
+executed snippet estimated_duration=333.0, duration=116.614470005
 helix_air.py completed successfully
 no extraction action
 Requested Output= 0.000
@@ -2217,13 +328,13 @@ persistence save - dvc
 no extraction position for 
 Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
 Extraction Finished
-15:07:05 -- ******* Extraction Finished *******
+15:35:17 -- ******* Extraction Finished *******
 no overlap. not waiting for min ms pumptime
 start measurement
 do measurement
 L#=a-01-H analysis type=air
 Measurement Started helix_air.py
-15:07:05 -- ******* Measurement Started helix_air.py *******
+15:35:17 -- ******* Measurement Started helix_air.py *******
 state changed from extraction to measurement
 setting spec, defl, and gains
 GetExtractionLens ===>> 18.29
@@ -2238,11 +349,11 @@ GetGain AX ===>> 1.0071313708941
 GetGain L1 ===>> 1.00793592600847
 GetGain L2(CDD) ===>> 0
 pre measurement save
-New frame /Users/labuser/Pychron/data/isotopes/68/560ebb-18a8-4163-8880-d7a4109162ad.h5
-flush and close file /Users/labuser/Pychron/data/isotopes/68/560ebb-18a8-4163-8880-d7a4109162ad.h5
+New frame /Users/labuser/Pychron/data/isotopes/ae/0cf920-86b5-42f5-bdbe-03c62a768f4a.h5
+flush and close file /Users/labuser/Pychron/data/isotopes/ae/0cf920-86b5-42f5-bdbe-03c62a768f4a.h5
 testing...
 no interpolation path defined
-executed snippet estimated_duration=656.08, duration=0.000287055969238
+executed snippet estimated_duration=656.08, duration=0.000274896621704
 activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2(CDD)') {}
 activate detectors
 *************** Set Analysis View Ar/Ar
@@ -2255,11 +366,11 @@ setting isotope det=AX, iso=Ar38
 setting isotope det=L1, iso=Ar37
 setting isotope det=L2(CDD), iso=Ar36
 setting previous blanks
- - setting Ar40 blank 0.169+/-0.031
- - setting Ar36 blank 0.0248+/-0.0007
- - setting Ar37 blank 0.047+/-0.019
- - setting Ar38 blank 0.012+/-0.022
- - setting Ar39 blank 0.008+/-0.022
+ - setting Ar40 blank 0.208+/-0.033
+ - setting Ar36 blank 0.0251+/-0.0007
+ - setting Ar37 blank 0.008+/-0.017
+ - setting Ar38 blank 0.001+/-0.020
+ - setting Ar39 blank 0.047+/-0.021
 load analysis view
 position_magnet ('Ar40',) {'detector': 'H2'}
 detector Detector(H2)
@@ -2270,26 +381,26 @@ setting detector AX to Ar38 (37.962)
 setting detector L1 to Ar37 (36.962)
 setting detector L2(CDD) to Ar36 (35.962)
 Mapping mass to dac mass func: "parabolic"
-H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260047e+01]
-H2 map mass to dac 39.962 >> 3.7790104008
+H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71259896e+01]
+H2 map mass to dac 39.962 >> 3.77899537074
 GetHighVoltage ===>> 9900
-positioning Ar40 (3.7790104008) on H2
+positioning Ar40 (3.77899537074) on H2
 setting magnet DAC
-current  : 3.715959
-requested: 3.779010
+current  : 3.715944
+requested: 3.778995
 Delta Dac: 0.063051
-SetMagnetDAC 3.7790104008 ===>> OK
+SetMagnetDAC 3.77899537074 ===>> OK
 Magnet settling time: 0.500
 Magnet settling complete
 set_dac. change=True
-update labels <pychron.experiment.plot_panel.PlotPanel object at 0x136110fb0>
-update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x1324598f0>"
+update labels <pychron.experiment.plot_panel.PlotPanel object at 0x13cf3d7d0>
+update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x13a0c3650>"
 setting label 0 H2 Ar40
 setting label 1 H1 Ar39
 setting label 2 AX Ar38
 setting label 3 L1 Ar37
 setting label 4 L2(CDD) Ar36
-update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x1319d1e90>"
+update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x12e07ca10>"
 setting label 0 H2 Ar40
 setting label 1 H1 Ar39
 setting label 2 AX Ar38
@@ -2297,23 +408,22 @@ setting label 3 L1 Ar37
 setting label 4 L2(CDD) Ar36
 equilibrate () {'inlet': '2', 'outlet': '1', 'eqtime': 45.0}
 Equilibration Started
-15:07:07 -- ******* Equilibration Started *******
+15:35:19 -- ******* Equilibration Started *******
 check software interlocks 1
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 Close Valve Ion Pump Set ===>> OK
 change switch state (True, True)
-15:07:07 -- CLOSE  VALVE-1 (MSIonPump)
+15:35:19 -- CLOSE  VALVE-1 (MSIonPump)
 waiting 3s before opening inlet value ('2',)
-load indicator states
 check software interlocks 2
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@102)
 change switch state (True, True)
-15:07:10 -- OPEN   VALVE-2 (ExtrToMS)
+15:35:22 -- OPEN   VALVE-2 (ExtrToMS)
 set_time_zero () {}
 equilibrating for 45.0sec
 sniff (45.0,) {}
@@ -2324,29 +434,29 @@ add group /sniff/Ar39 (Group) '' table H1
 add group /sniff/Ar38 (Group) '' table AX
 add group /sniff/Ar37 (Group) '' table L1
 add group /sniff/Ar36 (Group) '' table L2(CDD)
-flush and close file /Users/labuser/Pychron/data/isotopes/68/560ebb-18a8-4163-8880-d7a4109162ad.h5
+flush and close file /Users/labuser/Pychron/data/isotopes/ae/0cf920-86b5-42f5-bdbe-03c62a768f4a.h5
 measuring sniff. ncounts=45.0
 "sniff" increment series count="1" fit count="0" regressing="False"
 starting measurement
 load indicator states
 load indicator states
-15:07:35 -- collecting point 25
+15:35:46 -- collecting point 25
 load indicator states
 load indicator states
 Equilibration Finished
-15:07:55 -- ******* Equilibration Finished *******
+15:36:07 -- ******* Equilibration Finished *******
 check software interlocks 2
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@102)
 change switch state (True, True)
-15:07:55 -- CLOSE  VALVE-2 (ExtrToMS)
+15:36:07 -- CLOSE  VALVE-2 (ExtrToMS)
 Post Equilibration Started helix_pump_prep.py
-15:07:55 -- ******* Post Equilibration Started helix_pump_prep.py *******
+15:36:07 -- ******* Post Equilibration Started helix_pump_prep.py *******
 testing...
 no interpolation path defined
-executed snippet estimated_duration=28.0, duration=0.000254154205322
+executed snippet estimated_duration=28.0, duration=0.000352144241333
 close ('6',) {}
 close name=6 desc=---
 check software interlocks 6
@@ -2355,7 +465,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@106)
 change switch state (True, True)
-15:07:55 -- CLOSE  VALVE-6 (APOuter)
+15:36:07 -- CLOSE  VALVE-6 (APOuter)
 -------------------------- close 6 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 open ('4',) {}
@@ -2366,12 +476,13 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 ROUT:OPEN (@104)
 change switch state (True, True)
-15:07:56 -- OPEN   VALVE-4 (FirstToSecondStage)
+15:36:07 -- OPEN   VALVE-4 (FirstToSecondStage)
 -------------------------- open 4 () result=[(True, True)]
+load indicator states
 waiting for write to finish
 measurement finished
-estimated time: 45.000 actual time: :45.222
-flush and close file /Users/labuser/Pychron/data/isotopes/68/560ebb-18a8-4163-8880-d7a4109162ad.h5
+estimated time: 45.000 actual time: :45.190
+flush and close file /Users/labuser/Pychron/data/isotopes/ae/0cf920-86b5-42f5-bdbe-03c62a768f4a.h5
 set_fits () {}
 using default fits file=/Users/labuser/Pychron/scripts/measurement/fits/nominal.yaml
 set "Ar40" to "('Parabolic', 'SEM')"
@@ -2393,7 +504,7 @@ add group /signal/Ar39 (Group) '' table H1
 add group /signal/Ar38 (Group) '' table AX
 add group /signal/Ar37 (Group) '' table L1
 add group /signal/Ar36 (Group) '' table L2(CDD)
-flush and close file /Users/labuser/Pychron/data/isotopes/68/560ebb-18a8-4163-8880-d7a4109162ad.h5
+flush and close file /Users/labuser/Pychron/data/isotopes/ae/0cf920-86b5-42f5-bdbe-03c62a768f4a.h5
 measuring signal. ncounts=400
 action=open, ok=True, locked=[False]
 sleep (2,) {}
@@ -2403,7 +514,7 @@ WaitControl setup for 2.0
 "signal" increment series count="2" fit count="1" regressing="True"
 starting measurement
 Join finished
-block finished. duration 2.01192998886
+block finished. duration 2.03158092499
 open ('11',) {}
 open name=11 desc=---
 check software interlocks 11
@@ -2412,7 +523,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 ROUT:OPEN (@111)
 change switch state (True, True)
-15:07:58 -- OPEN   VALVE-11 (APSafety)
+15:36:10 -- OPEN   VALVE-11 (APSafety)
 -------------------------- open 11 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 open ('5',) {}
@@ -2423,364 +534,8 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@105)
 change switch state (True, True)
-15:07:58 -- OPEN   VALVE-5 (FirstToTurbo)
+15:36:10 -- OPEN   VALVE-5 (FirstToTurbo)
 -------------------------- open 5 () result=[(True, True)]
-action=open, ok=True, locked=[False]
-sleep (10,) {}
-SLEEP 10.0
-block started
-WaitControl setup for 10.0  
-load indicator states
-Join finished
-block finished. duration 10.0691170692
-close ('4',) {}
-close name=4 desc=---
-check software interlocks 4
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script close_channel True
-ROUT:CLOSE (@104)
-change switch state (True, True)
-15:08:09 -- CLOSE  VALVE-4 (FirstToSecondStage)
--------------------------- close 4 () result=[(True, True)]
-action=close, ok=True, locked=[False]
-sleep (2,) {}
-SLEEP 2.0
-block started
-WaitControl setup for 2.0  
-load indicator states
-Join finished
-block finished. duration 2.02082920074
-open ('3',) {}
-open name=3 desc=---
-check software interlocks 3
-interlocks []
-actuate state mode=None-script, software_lock=False
-doing actuation None-script open_channel True
-ROUT:OPEN (@103)
-change switch state (True, True)
-15:08:11 -- OPEN   VALVE-3 (SecondToIP)
--------------------------- open 3 () result=[(True, True)]
-action=open, ok=True, locked=[False]
-executed snippet estimated_duration=42.0, duration=15.924695015
-helix_pump_prep.py completed successfully
-Post Equilibration Finished
-15:08:11 -- ******* Post Equilibration Finished *******
-15:08:20 -- collecting point 25
-load indicator states
-load indicator states
-load indicator states
-15:08:45 -- collecting point 50
-load indicator states
-load indicator states
-15:09:10 -- collecting point 75
-load indicator states
-load indicator states
-load indicator states
-15:09:36 -- collecting point 100
-load indicator states
-load indicator states
-15:10:01 -- collecting point 125
-load indicator states
-load indicator states
-load indicator states
-15:10:26 -- collecting point 150
-load indicator states
-load indicator states
-15:10:51 -- collecting point 175
-load indicator states
-load indicator states
-15:11:16 -- collecting point 200
-load indicator states
-load indicator states
-load indicator states
-15:11:41 -- collecting point 225
-load indicator states
-load indicator states
-15:12:06 -- collecting point 250
-load indicator states
-load indicator states
-load indicator states
-15:12:31 -- collecting point 275
-load indicator states
-load indicator states
-15:12:56 -- collecting point 300
-load indicator states
-load indicator states
-load indicator states
-15:13:21 -- collecting point 325
-load indicator states
-load indicator states
-15:13:46 -- collecting point 350
-load indicator states
-load indicator states
-15:14:11 -- collecting point 375
-load indicator states
-load indicator states
-load indicator states
-15:14:36 -- collecting point 400
-waiting for write to finish
-measurement finished
-estimated time: 400.000 actual time: :401.202
-flush and close file /Users/labuser/Pychron/data/isotopes/68/560ebb-18a8-4163-8880-d7a4109162ad.h5
-baselines () {'detector': 'H2', 'mass': 39.59, 'ncounts': 120}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Baseline
-build tables- baseline [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
-add group baseline table H2
-add group baseline table H1
-add group baseline table AX
-add group baseline table L1
-add group baseline table L2(CDD)
-flush and close file /Users/labuser/Pychron/data/isotopes/68/560ebb-18a8-4163-8880-d7a4109162ad.h5
-detector Detector(H2)
-POSITION 39.59 H2
-Mapping mass to dac mass func: "parabolic"
-H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260047e+01]
-H2 map mass to dac 39.59 >> 3.7159594079
-GetHighVoltage ===>> 9900
-positioning 39.59 (3.7159594079) on H2
-setting magnet DAC
-current  : 3.779010
-requested: 3.715959
-Delta Dac: 0.063051
-SetMagnetDAC 3.7159594079 ===>> OK
-Magnet settling time: 0.500
-Magnet settling complete
-set_dac. change=True
-Delaying 4s for detectors to settle
-Join finished
-measuring baseline. ncounts=120
-"baseline" increment series count="2" fit count="1" regressing="True"
-starting measurement
-load indicator states
-load indicator states
-load indicator states
-15:15:07 -- collecting point 25
-load indicator states
-load indicator states
-15:15:32 -- collecting point 50
-load indicator states
-load indicator states
-load indicator states
-15:15:57 -- collecting point 75
-load indicator states
-load indicator states
-15:16:22 -- collecting point 100
-load indicator states
-load indicator states
-waiting for write to finish
-measurement finished
-estimated time: 120.000 actual time: :120.466
-flush and close file /Users/labuser/Pychron/data/isotopes/68/560ebb-18a8-4163-8880-d7a4109162ad.h5
-activate_detectors ('L2(CDD)', 'AX') {'peak_center': True}
-peak_center () {'detector': 'H2', 'isotope': 'Ar40'}
-peak center: mean=4877.97312982 threshold=3
-peak center started
-setup peak center. detector=['H2', 'L2(CDD)', 'AX'], isotope=Ar40
-VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x132e65350>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
-VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x132e65350>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
-VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x1347a50b0>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
-setting integration time = 1.048576
-SetIntegrationTime 1.048576 ===>> OK
-Mapping mass to dac mass func: "parabolic"
-H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260047e+01]
-H2 map mass to dac 39.962 >> 3.7790104008
-GetHighVoltage ===>> 9900
-do peak center. <pychron.spectrometer.jobs.peak_center.PeakCenter object at 0x13003da10>
-doing pc
-starting peak center. center dac= 3.7790104008 step_width=5e-05
-width = 5e-05
-get scan parameters. half-width=0.0025,window=0.0025, i=0, scalar=1
-Scan parameters center=3.77901 width=0.00500 (3.77651 - 3.78151)
-Moving to starting dac 3.7765104008
-setting magnet DAC
-current  : 3.715959
-requested: 3.776510
-Delta Dac: 0.060551
-SetMagnetDAC 3.7765104008 ===>> OK
-Magnet settling time: 0.500
-Magnet settling complete
-set_dac. change=True
-Wait until signal near baseline. tol= -0.000376610407114. timeout= 10
-Peak center baseline intensity achieved
-_do_sweep sm= 3.7765104008, em= 3.7815104008, stm= 5e-05
-calculated step values: start=3.7765104008, end=3.7815104008, width=5e-05, nsteps=101.0
-setting magnet DAC
-current  : 3.776510
-requested: 3.776510
-Delta Dac: 0.000000
-set_dac. change=False
-setting magnet DAC
-current  : 3.776510
-requested: 3.776561
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776561
-requested: 3.776611
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776611
-requested: 3.776662
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776662
-requested: 3.776712
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776712
-requested: 3.776763
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776763
-requested: 3.776813
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776813
-requested: 3.776864
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776864
-requested: 3.776914
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776914
-requested: 3.776965
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776965
-requested: 3.777015
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777015
-requested: 3.777066
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777066
-requested: 3.777116
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777116
-requested: 3.777167
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777167
-requested: 3.777217
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777217
-requested: 3.777268
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777268
-requested: 3.777318
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777318
-requested: 3.777369
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777369
-requested: 3.777419
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777419
-requested: 3.777470
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777470
-requested: 3.777521
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777521
-requested: 3.777571
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777571
-requested: 3.777622
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777622
-requested: 3.777672
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777672
-requested: 3.777723
-Delta Dac: 0.000051
-Magnet settling time: 2.097
 ============ Exception ==============
 Traceback (most recent call last):
 File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/qt4/base_window.py", line 198, in paintEvent
@@ -2807,582 +562,963 @@ File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/chaco/
     ends[:,0] = self._tick_extents[:,1]
 IndexError: too many indices for array
 ============ End Exception ==========
+action=open, ok=True, locked=[False]
+sleep (10,) {}
+SLEEP 10.0
+block started
+WaitControl setup for 10.0  
+load indicator states
+Join finished
+block finished. duration 10.0566620827
+close ('4',) {}
+close name=4 desc=---
+check software interlocks 4
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script close_channel True
+ROUT:CLOSE (@104)
+change switch state (True, True)
+15:36:20 -- CLOSE  VALVE-4 (FirstToSecondStage)
+-------------------------- close 4 () result=[(True, True)]
+action=close, ok=True, locked=[False]
+sleep (2,) {}
+SLEEP 2.0
+block started
+WaitControl setup for 2.0  
+Join finished
+block finished. duration 2.01369714737
+open ('3',) {}
+open name=3 desc=---
+check software interlocks 3
+interlocks []
+actuate state mode=None-script, software_lock=False
+doing actuation None-script open_channel True
+ROUT:OPEN (@103)
+change switch state (True, True)
+15:36:23 -- OPEN   VALVE-3 (SecondToIP)
+-------------------------- open 3 () result=[(True, True)]
+action=open, ok=True, locked=[False]
+executed snippet estimated_duration=42.0, duration=15.9214589596
+helix_pump_prep.py completed successfully
+Post Equilibration Finished
+15:36:23 -- ******* Post Equilibration Finished *******
+load indicator states
+15:36:32 -- collecting point 25
+load indicator states
+load indicator states
+15:36:57 -- collecting point 50
+load indicator states
+load indicator states
+load indicator states
+15:37:22 -- collecting point 75
+load indicator states
+load indicator states
+15:37:47 -- collecting point 100
+load indicator states
+load indicator states
+load indicator states
+15:38:12 -- collecting point 125
+load indicator states
+load indicator states
+15:38:37 -- collecting point 150
+load indicator states
+load indicator states
+15:39:02 -- collecting point 175
+load indicator states
+load indicator states
+load indicator states
+15:39:28 -- collecting point 200
+load indicator states
+load indicator states
+15:39:53 -- collecting point 225
+load indicator states
+load indicator states
+load indicator states
+15:40:18 -- collecting point 250
+load indicator states
+load indicator states
+15:40:43 -- collecting point 275
+load indicator states
+load indicator states
+load indicator states
+15:41:08 -- collecting point 300
+load indicator states
+load indicator states
+15:41:33 -- collecting point 325
+load indicator states
+load indicator states
+15:41:58 -- collecting point 350
+load indicator states
+load indicator states
+load indicator states
+15:42:23 -- collecting point 375
+load indicator states
+load indicator states
+15:42:48 -- collecting point 400
+waiting for write to finish
+measurement finished
+estimated time: 400.000 actual time: :401.307
+flush and close file /Users/labuser/Pychron/data/isotopes/ae/0cf920-86b5-42f5-bdbe-03c62a768f4a.h5
+baselines () {'detector': 'H2', 'mass': 39.59, 'ncounts': 120}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Baseline
+build tables- baseline [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
+add group baseline table H2
+add group baseline table H1
+add group baseline table AX
+add group baseline table L1
+add group baseline table L2(CDD)
+flush and close file /Users/labuser/Pychron/data/isotopes/ae/0cf920-86b5-42f5-bdbe-03c62a768f4a.h5
+detector Detector(H2)
+POSITION 39.59 H2
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71259896e+01]
+H2 map mass to dac 39.59 >> 3.71594437784
+GetHighVoltage ===>> 9900
+positioning 39.59 (3.71594437784) on H2
+setting magnet DAC
+current  : 3.778995
+requested: 3.715944
+Delta Dac: 0.063051
+SetMagnetDAC 3.71594437784 ===>> OK
+Magnet settling time: 0.500
 Magnet settling complete
 set_dac. change=True
+Delaying 4s for detectors to settle
+load indicator states
+Join finished
+measuring baseline. ncounts=120
+"baseline" increment series count="2" fit count="1" regressing="True"
+starting measurement
+load indicator states
+load indicator states
+15:43:18 -- collecting point 25
+load indicator states
+load indicator states
+load indicator states
+15:43:44 -- collecting point 50
+load indicator states
+load indicator states
+15:44:09 -- collecting point 75
+load indicator states
+load indicator states
+15:44:34 -- collecting point 100
+load indicator states
+load indicator states
+load indicator states
+waiting for write to finish
+measurement finished
+estimated time: 120.000 actual time: :120.511
+flush and close file /Users/labuser/Pychron/data/isotopes/ae/0cf920-86b5-42f5-bdbe-03c62a768f4a.h5
+activate_detectors ('L2(CDD)', 'AX') {'peak_center': True}
+peak_center () {'detector': 'H2', 'isotope': 'Ar40'}
+peak center: mean=4883.31273101 threshold=3
+peak center started
+setup peak center. detector=['H2', 'L2(CDD)', 'AX'], isotope=Ar40
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x1364e9cb0>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x1364e9cb0>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x132e65350>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
+setting integration time = 1.048576
+SetIntegrationTime 1.048576 ===>> OK
+Mapping mass to dac mass func: "parabolic"
+H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71259896e+01]
+H2 map mass to dac 39.962 >> 3.77899537074
+GetHighVoltage ===>> 9900
+do peak center. <pychron.spectrometer.jobs.peak_center.PeakCenter object at 0x13003da10>
+doing pc
+starting peak center. center dac= 3.77899537074 step_width=5e-05
+width = 5e-05
+get scan parameters. half-width=0.0025,window=0.0025, i=0, scalar=1
+Scan parameters center=3.77900 width=0.00500 (3.77650 - 3.78150)
+Moving to starting dac 3.77649537074
 setting magnet DAC
-current  : 3.777723
-requested: 3.777773
+current  : 3.715944
+requested: 3.776495
+Delta Dac: 0.060551
+SetMagnetDAC 3.77649537074 ===>> OK
+Magnet settling time: 0.500
+Magnet settling complete
+set_dac. change=True
+Wait until signal near baseline. tol= -0.0018803903297. timeout= 10
+Peak center baseline intensity achieved
+_do_sweep sm= 3.77649537074, em= 3.78149537074, stm= 5e-05
+calculated step values: start=3.77649537074, end=3.78149537074, width=5e-05, nsteps=101.0
+setting magnet DAC
+current  : 3.776495
+requested: 3.776495
+Delta Dac: 0.000000
+set_dac. change=False
+setting magnet DAC
+current  : 3.776495
+requested: 3.776546
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777773
-requested: 3.777824
+current  : 3.776546
+requested: 3.776596
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776596
+requested: 3.776647
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776647
+requested: 3.776697
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776697
+requested: 3.776748
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777824
-requested: 3.777874
+current  : 3.776748
+requested: 3.776798
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777874
-requested: 3.777925
+current  : 3.776798
+requested: 3.776849
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777925
-requested: 3.777975
+current  : 3.776849
+requested: 3.776899
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777975
-requested: 3.778026
+current  : 3.776899
+requested: 3.776950
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778026
-requested: 3.778076
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778076
-requested: 3.778127
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778127
-requested: 3.778177
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778177
-requested: 3.778228
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778228
-requested: 3.778278
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778278
-requested: 3.778329
+current  : 3.776950
+requested: 3.777000
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778329
-requested: 3.778379
+current  : 3.777000
+requested: 3.777051
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778379
-requested: 3.778430
+current  : 3.777051
+requested: 3.777101
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778430
-requested: 3.778480
+current  : 3.777101
+requested: 3.777152
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778480
-requested: 3.778531
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778531
-requested: 3.778581
+current  : 3.777152
+requested: 3.777202
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778581
-requested: 3.778632
+current  : 3.777202
+requested: 3.777253
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778632
-requested: 3.778682
+current  : 3.777253
+requested: 3.777303
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778682
-requested: 3.778733
+current  : 3.777303
+requested: 3.777354
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778733
-requested: 3.778783
+current  : 3.777354
+requested: 3.777404
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778783
-requested: 3.778834
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778834
-requested: 3.778884
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778884
-requested: 3.778935
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778935
-requested: 3.778985
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778985
-requested: 3.779036
+current  : 3.777404
+requested: 3.777455
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779036
-requested: 3.779086
+current  : 3.777455
+requested: 3.777505
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779086
-requested: 3.779137
+current  : 3.777505
+requested: 3.777556
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779137
-requested: 3.779187
+current  : 3.777556
+requested: 3.777606
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779187
-requested: 3.779238
+current  : 3.777606
+requested: 3.777657
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779238
-requested: 3.779288
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779288
-requested: 3.779339
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779339
-requested: 3.779389
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779389
-requested: 3.779440
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779440
-requested: 3.779490
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779490
-requested: 3.779541
+current  : 3.777657
+requested: 3.777707
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779541
-requested: 3.779591
+current  : 3.777707
+requested: 3.777758
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779591
-requested: 3.779642
+current  : 3.777758
+requested: 3.777809
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779642
-requested: 3.779692
+current  : 3.777809
+requested: 3.777859
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779692
-requested: 3.779743
+current  : 3.777859
+requested: 3.777910
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779743
-requested: 3.779793
+current  : 3.777910
+requested: 3.777960
+Delta Dac: 0.000051
+============ Exception ==============
+Traceback (most recent call last):
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/qt4/base_window.py", line 198, in paintEvent
+    self.handler.paintEvent(event)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/qt4/base_window.py", line 50, in paintEvent
+    self._enable_window._paint(event)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/abstract_window.py", line 467, in _paint
+    self.component.draw(gc, view_bounds=(0, 0, size[0], size[1]))
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 421, in draw
+    self._draw(gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 773, in _draw
+    self._dispatch_draw(layer, gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 327, in _dispatch_draw
+    component._dispatch_draw(layer, gc, new_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 312, in _dispatch_draw
+    my_handler(gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 352, in _draw_container_underlay
+    self._draw_underlay(gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 881, in _draw_underlay
+    underlay.overlay(self, gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/chaco/grid.py", line 306, in overlay
+    self._draw_component(gc, view_bounds, mode)
+File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/chaco/grid.py", line 344, in _draw_component
+    ends[:,0] = self._tick_extents[:,1]
+IndexError: too many indices for array
+============ End Exception ==========
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777960
+requested: 3.778011
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778011
+requested: 3.778061
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778061
+requested: 3.778112
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778112
+requested: 3.778162
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778162
+requested: 3.778213
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779793
-requested: 3.779844
+current  : 3.778213
+requested: 3.778263
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779844
-requested: 3.779894
+current  : 3.778263
+requested: 3.778314
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779894
-requested: 3.779945
+current  : 3.778314
+requested: 3.778364
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779945
-requested: 3.779995
+current  : 3.778364
+requested: 3.778415
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779995
-requested: 3.780046
+current  : 3.778415
+requested: 3.778465
+Delta Dac: 0.000051
+load indicator states
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778465
+requested: 3.778516
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778516
+requested: 3.778566
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778566
+requested: 3.778617
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778617
+requested: 3.778667
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780046
-requested: 3.780096
+current  : 3.778667
+requested: 3.778718
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780096
-requested: 3.780147
+current  : 3.778718
+requested: 3.778768
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780147
-requested: 3.780197
+current  : 3.778768
+requested: 3.778819
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780197
-requested: 3.780248
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780248
-requested: 3.780298
+current  : 3.778819
+requested: 3.778869
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780298
-requested: 3.780349
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780349
-requested: 3.780399
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780399
-requested: 3.780450
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780450
-requested: 3.780500
+current  : 3.778869
+requested: 3.778920
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780500
-requested: 3.780551
+current  : 3.778920
+requested: 3.778970
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780551
-requested: 3.780601
+current  : 3.778970
+requested: 3.779021
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780601
-requested: 3.780652
+current  : 3.779021
+requested: 3.779071
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780652
-requested: 3.780702
+current  : 3.779071
+requested: 3.779122
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780702
-requested: 3.780753
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780753
-requested: 3.780803
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780803
-requested: 3.780854
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780854
-requested: 3.780904
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780904
-requested: 3.780955
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780955
-requested: 3.781005
+current  : 3.779122
+requested: 3.779172
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781005
-requested: 3.781056
+current  : 3.779172
+requested: 3.779223
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781056
-requested: 3.781106
+current  : 3.779223
+requested: 3.779273
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781106
-requested: 3.781157
+current  : 3.779273
+requested: 3.779324
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781157
-requested: 3.781207
+current  : 3.779324
+requested: 3.779374
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781207
-requested: 3.781258
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.781258
-requested: 3.781308
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.781308
-requested: 3.781359
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.781359
-requested: 3.781409
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.781409
-requested: 3.781460
+current  : 3.779374
+requested: 3.779425
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781460
-requested: 3.781510
+current  : 3.779425
+requested: 3.779475
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779475
+requested: 3.779526
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779526
+requested: 3.779576
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779576
+requested: 3.779627
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779627
+requested: 3.779677
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779677
+requested: 3.779728
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779728
+requested: 3.779778
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779778
+requested: 3.779829
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779829
+requested: 3.779879
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779879
+requested: 3.779930
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779930
+requested: 3.779980
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.779980
+requested: 3.780031
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780031
+requested: 3.780081
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780081
+requested: 3.780132
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780132
+requested: 3.780182
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780182
+requested: 3.780233
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780233
+requested: 3.780283
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780283
+requested: 3.780334
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780334
+requested: 3.780384
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780384
+requested: 3.780435
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780435
+requested: 3.780485
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780485
+requested: 3.780536
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780536
+requested: 3.780586
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780586
+requested: 3.780637
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780637
+requested: 3.780687
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780687
+requested: 3.780738
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780738
+requested: 3.780788
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780788
+requested: 3.780839
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780839
+requested: 3.780889
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780889
+requested: 3.780940
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780940
+requested: 3.780990
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.780990
+requested: 3.781041
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781041
+requested: 3.781091
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781091
+requested: 3.781142
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781142
+requested: 3.781192
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781192
+requested: 3.781243
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781243
+requested: 3.781293
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781293
+requested: 3.781344
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781344
+requested: 3.781394
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781394
+requested: 3.781445
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781445
+requested: 3.781495
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 result of _do_sweep=True
-result of _calculate_peak_center=([3.7775174148296591, 3.778995370741483, 3.7804733266533064], [898.11159968857385, 4802.3036365722573, 884.83113554234978], 3.7789853507014026, 4802.3036365722573)
-new center pos Detector(H2) (Ar40) @ 3.77899537074
+result of _calculate_peak_center=([3.7775324448897734, 3.7790003807615165, 3.78046831663326], [879.02552746775063, 4748.9026727094351, 910.25696718061829], 3.7785194188376692, 4748.9026727094351)
+new center pos Detector(H2) (Ar40) @ 3.77900038076
 GetHighVoltage ===>> 9900
-dac uncorrected for HV and deflection 3.77899537074
-update mftable H2 Ar40 3.77899537074 message=automated run peakcenter
-get initial guess parabolic
-get initial guess parabolic
+dac uncorrected for HV and deflection 3.77900038076
+update mftable H2 Ar40 3.77900038076 message=automated run peakcenter
 get initial guess parabolic
 sweep finished
 get initial guess parabolic
 get initial guess parabolic
+get initial guess parabolic
+get initial guess parabolic
 dump mftable to /Users/labuser/Pychron/setupfiles/spectrometer/mftables/mftable.csv
 setting magnet DAC
-current  : 3.781510
-requested: 3.778995
-Delta Dac: 0.002515
-SetMagnetDAC 3.77899537074 ===>> OK
+current  : 3.781495
+requested: 3.779000
+Delta Dac: 0.002495
+SetMagnetDAC 3.77900038076 ===>> OK
 Magnet settling time: 0.500
 Magnet settling complete
 set_dac. change=True
 setting integration time = 0.524288
 SetIntegrationTime 0.524288 ===>> OK
-flush and close file /Users/labuser/Pychron/data/isotopes/68/560ebb-18a8-4163-8880-d7a4109162ad.h5
-executed snippet estimated_duration=656.08, duration=792.23854208
+flush and close file /Users/labuser/Pychron/data/isotopes/ae/0cf920-86b5-42f5-bdbe-03c62a768f4a.h5
+executed snippet estimated_duration=656.08, duration=792.026350021
 helix_air.py completed successfully
 Measurement Finished
-15:20:18 -- ******* Measurement Finished *******
+15:48:29 -- ******* Measurement Finished *******
 Post Measurement Started helix_pump_ms.py
-15:20:18 -- ******* Post Measurement Started helix_pump_ms.py *******
+15:48:29 -- ******* Post Measurement Started helix_pump_ms.py *******
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=4.00543212891e-05
+executed snippet estimated_duration=0, duration=3.81469726562e-05
 open ('1',) {}
 open name=1 desc=---
 check software interlocks 1
@@ -3391,14 +1527,14 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 Open Valve Ion Pump Set ===>> OK
 change switch state (True, True)
-15:20:18 -- OPEN   VALVE-1 (MSIonPump)
+15:48:29 -- OPEN   VALVE-1 (MSIonPump)
 -------------------------- open 1 () result=[(True, True)]
 action=open, ok=True, locked=[False]
-executed snippet estimated_duration=0, duration=0.268774986267
+executed snippet estimated_duration=0, duration=0.262670993805
 helix_pump_ms.py completed successfully
 setting _ms_pumptime
 Post Measurement Finished
-15:20:18 -- ******* Post Measurement Finished *******
+15:48:29 -- ******* Post Measurement Finished *******
 $$$$$$$$$$$$$$$$$$$$ state at run end measurement
 state changed from measurement to success
 post measurement save measured=True aborted=False
@@ -3416,10 +1552,10 @@ setting fod for H1= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
 persistence save...
 persistence save - db
 post measurement save
-5175435088 connecting to database sqlite:////Users/labuser/Pychron/.appdata/local_lab.db
+5067578736 connecting to database sqlite:////Users/labuser/Pychron/.appdata/local_lab.db
 connected to db sqlite:////Users/labuser/Pychron/.appdata/local_lab.db
-create new session 5175435088
-close session 5175435088
+create new session 5067578736
+close session 5067578736
 No database instance. Not saving post measurement to isotopedb database
 $$$$$$$$$$$$$$$ auto_save_detector_ic=False
 persistence save - dvc
@@ -3450,10 +1586,11 @@ add to repo msg=modified - -H-115.inte.json
 add to repo msg=modified - -H-115.base.json
 commit message=<ISOEVO> default collection fits
 add to repo msg=modified - -H-115.blan.json
+load indicator states
 commit message=<BLANKS> preceding ba-01-H-63
 add to repo msg=modified - -H-115.icfa.json
 commit message=<ICFactor> default
-push repository <pychron.git_archive.repo_manager.GitRepoManager object at 0x1349aa8f0>
+push repository <pychron.git_archive.repo_manager.GitRepoManager object at 0x13a0da950>
 pushing to remote=origin, url=https://github.com
 Popen(['git', 'push', 'origin', 'master'], cwd=/Users/labuser/Pychron/data/.dvc/repositories/Helix_air180, universal_newlines=False, shell=None)
 Popen(['git', 'fetch', 'origin'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
@@ -3464,23 +1601,23 @@ Popen(['git', 'push', 'origin', 'master'], cwd=/Users/labuser/Pychron/data/.dvc/
 create new session 5003415088
 add association Helix_air180
 get identifier "a-01-H"
-setting analysis irradiation position=<pychron.dvc.dvc_orm.IrradiationPositionTbl object at 0x13499e9d0>
+setting analysis irradiation position=<pychron.dvc.dvc_orm.IrradiationPositionTbl object at 0x134d4c790>
 close session 5003415088
 ================= post measurement finished
-15:20:25 -- ******* Post Run Check *******
+15:48:36 -- ******* Post Run Check *******
 loading queue conditionals post_run_actions
 loading system conditionals post_run_actions
 loading conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
 loading queue conditionals post_run_terminations
 loading system conditionals post_run_terminations
 loading conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
-15:20:25 -- ******* Post Run Check Passed *******
-15:20:25 -- Automated run a-01-H-115 success duration: 915.817 s
+15:48:36 -- ******* Post Run Check Passed *******
+15:48:36 -- Automated run a-01-H-115 success duration: 915.618 s
 ----------------- finish -----------------
 ----------------- stop -----------------
 retroactive repository identifiers disabled
-finish run. runs completed=4
-update duration runid=a-01-H-115, duration=915.816659212, md5=060fae79
+finish run. runs completed=6
+update duration runid=a-01-H-115, duration=915.618370056, md5=060fae79
 loading script "helix_air.py"
 loading script "helix_pump_ms.py"
 loading script "helix_air.py"
@@ -3504,7 +1641,7 @@ loading script "helix_air.py"
 loading script "helix_pump_prep.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=28.0, duration=0.000241994857788
+executed snippet estimated_duration=28.0, duration=0.000283002853394
 Script duration 1312.0
 Run total estimated duration= 1313.000
 script duration name:air seconds:656.0
@@ -4069,15 +2206,7 @@ script duration name:air seconds:656.0
 script duration name:air seconds:656.0
 Script duration 1312.0
 Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-nruns=143 before=5.0, run_dur=187759.0, btw=4260.0
+nruns=141 before=5.0, run_dur=185133.0, btw=4200.0
 write rem/ex queues
 /Users/labuser/Pychron/experiments/rem/Air.rem.txt
 /Users/labuser/Pychron/experiments/rem/Air.ex.txt
