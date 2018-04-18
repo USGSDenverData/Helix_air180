@@ -5,7 +5,7 @@ loading script "helix_air.py"
 loading script "helix_pump_prep.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=656.08, duration=0.000230073928833
+executed snippet estimated_duration=656.08, duration=0.000236988067627
 script duration name:air seconds:656.0
 loading script "helix_air.py"
 loading script "helix_pump_ms.py"
@@ -13,7 +13,7 @@ loading script "helix_air.py"
 loading script "helix_pump_prep.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=2.78949737549e-05
+executed snippet estimated_duration=0, duration=3.12328338623e-05
 air in script context. using previous estimated duration
 script duration name:air seconds:656.0
 loading script "helix_air.py"
@@ -22,7 +22,7 @@ loading script "helix_air.py"
 loading script "helix_pump_prep.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=28.0, duration=0.000200033187866
+executed snippet estimated_duration=28.0, duration=0.000181913375854
 Script duration 1312.0
 Run total estimated duration= 1313.000
 run duration: 0:21:53
@@ -46,25 +46,25 @@ $$$$$$$$$$$$$$$ auto_save_detector_ic=False
 loading queue conditionals pre_run_terminations
 loading system conditionals pre_run_terminations
 loading conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
-21:08:14 -- ******* Pre Extraction Check *******
+21:40:04 -- ******* Pre Extraction Check *******
 Get a measurement from the spectrometer
-Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=0.03881,5.57788,0.18243,-0.15048,-0.00531
-21:08:14 -- testing system defined conditionals
+Pre Extraction Termination data. keys=L2(CDD),H2,H1,AX,L1, signals=0.03209,4.28403,0.02750,0.37987,0.02254
+21:40:04 -- testing system defined conditionals
 Checking default pre extraction terminations n=1
 testing L2_CDD_
 evaluate ot="L2(CDD).inactive" t="L2_CDD_", ctx="{'L2_CDD_': False}"
-21:08:14 -- ******* Pre Extraction Check Passed *******
+21:40:04 -- ******* Pre Extraction Check Passed *******
 =================================================================================
 start extraction
 do extraction
-Analysis started at 21:08:14.540428
+Analysis started at 21:40:04.590205
 Extraction Started helix_air.py
-21:08:14 -- ******* Extraction Started helix_air.py *******
+21:40:04 -- ******* Extraction Started helix_air.py *******
 state changed from not run to extraction
 DO EXTRACTION <pychron.extraction_line.pyscript_runner.PyScriptRunner object at 0x12c6ced70>
 testing...
 no interpolation path defined
-executed snippet estimated_duration=222.0, duration=0.000517129898071
+executed snippet estimated_duration=222.0, duration=0.000525951385498
 Air pipette
 open ('3',) {}
 open name=3 desc=---
@@ -74,7 +74,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 ROUT:OPEN (@103)
 change switch state (True, True)
-21:08:14 -- OPEN   VALVE-3 (SecondToIP)
+21:40:04 -- OPEN   VALVE-3 (SecondToIP)
 -------------------------- open 3 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 close ('2',) {}
@@ -85,7 +85,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 ROUT:CLOSE (@102)
 change switch state (True, True)
-21:08:14 -- CLOSE  VALVE-2 (ExtrToMS)
+21:40:04 -- CLOSE  VALVE-2 (ExtrToMS)
 -------------------------- close 2 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 open ('1',) {}
@@ -96,7 +96,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 Open Valve Ion Pump Set ===>> OK
 change switch state (True, True)
-21:08:15 -- OPEN   VALVE-1 (MSIonPump)
+21:40:05 -- OPEN   VALVE-1 (MSIonPump)
 -------------------------- open 1 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 close ('8',) {}
@@ -107,7 +107,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 ROUT:CLOSE (@108)
 change switch state (True, True)
-21:08:15 -- CLOSE  VALVE-8 (Sample1toFirst)
+21:40:05 -- CLOSE  VALVE-8 (Sample1toFirst)
 -------------------------- close 8 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 close ('9',) {}
@@ -118,9 +118,8 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 ROUT:CLOSE (@109)
 change switch state (True, True)
-21:08:15 -- CLOSE  VALVE-9 (Sample2toFirst)
+21:40:05 -- CLOSE  VALVE-9 (Sample2toFirst)
 -------------------------- close 9 () result=[(True, True)]
-load indicator states
 action=close, ok=True, locked=[False]
 close ('7',) {}
 close name=7 desc=---
@@ -130,7 +129,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 ROUT:CLOSE (@107)
 change switch state (True, True)
-21:08:16 -- CLOSE  VALVE-7 (APInner)
+21:40:06 -- CLOSE  VALVE-7 (APInner)
 -------------------------- close 7 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 open ('5',) {}
@@ -141,7 +140,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 ROUT:OPEN (@105)
 change switch state (True, True)
-21:08:16 -- OPEN   VALVE-5 (FirstToTurbo)
+21:40:06 -- OPEN   VALVE-5 (FirstToTurbo)
 -------------------------- open 5 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 open ('11',) {}
@@ -152,7 +151,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 ROUT:OPEN (@111)
 change switch state (True, True)
-21:08:16 -- OPEN   VALVE-11 (APSafety)
+21:40:06 -- OPEN   VALVE-11 (APSafety)
 -------------------------- open 11 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 open ('6',) {}
@@ -163,7 +162,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@106)
 change switch state (True, True)
-21:08:16 -- OPEN   VALVE-6 (APOuter)
+21:40:06 -- OPEN   VALVE-6 (APOuter)
 -------------------------- open 6 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 sleep (15,) {}
@@ -171,8 +170,9 @@ SLEEP 15.0
 block started
 WaitControl setup for 15.0  
 load indicator states
+load indicator states
 Join finished
-block finished. duration 15.0681090355
+block finished. duration 15.070497036
 close ('6',) {}
 close name=6 desc=---
 check software interlocks 6
@@ -181,7 +181,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@106)
 change switch state (True, True)
-21:08:32 -- CLOSE  VALVE-6 (APOuter)
+21:40:22 -- CLOSE  VALVE-6 (APOuter)
 -------------------------- close 6 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 sleep (2,) {}
@@ -189,7 +189,7 @@ SLEEP 2.0
 block started
 WaitControl setup for 2.0  
 Join finished
-block finished. duration 2.01195383072
+block finished. duration 2.00997614861
 Blank. Not filling pipette
 sleep (30,) {}
 SLEEP 30.0
@@ -199,7 +199,7 @@ load indicator states
 load indicator states
 load indicator states
 Join finished
-block finished. duration 30.1108281612
+block finished. duration 30.0972080231
 close ('7',) {}
 close name=7 desc=---
 check software interlocks 7
@@ -208,7 +208,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 ROUT:CLOSE (@107)
 change switch state (True, True)
-21:09:04 -- CLOSE  VALVE-7 (APInner)
+21:40:54 -- CLOSE  VALVE-7 (APInner)
 -------------------------- close 7 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 close ('5',) {}
@@ -219,7 +219,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@105)
 change switch state (True, True)
-21:09:05 -- CLOSE  VALVE-5 (FirstToTurbo)
+21:40:55 -- CLOSE  VALVE-5 (FirstToTurbo)
 -------------------------- close 5 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 close ('4',) {}
@@ -230,16 +230,15 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel False
 ROUT:CLOSE (@104)
 change switch state (True, True)
-21:09:05 -- CLOSE  VALVE-4 (FirstToSecondStage)
+21:40:55 -- CLOSE  VALVE-4 (FirstToSecondStage)
 -------------------------- close 4 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 sleep (2,) {}
 SLEEP 2.0
 block started
 WaitControl setup for 2.0  
-load indicator states
 Join finished
-block finished. duration 2.00590705872
+block finished. duration 2.02090597153
 open ('6',) {}
 open name=6 desc=---
 check software interlocks 6
@@ -248,7 +247,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@106)
 change switch state (True, True)
-21:09:07 -- OPEN   VALVE-6 (APOuter)
+21:40:57 -- OPEN   VALVE-6 (APOuter)
 -------------------------- open 6 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 first stage cleanup
@@ -258,8 +257,9 @@ block started
 WaitControl setup for 30.0  
 load indicator states
 load indicator states
+load indicator states
 Join finished
-block finished. duration 30.1262011528
+block finished. duration 30.0816171169
 close ('3',) {}
 close name=3 desc=---
 check software interlocks 3
@@ -268,16 +268,15 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@103)
 change switch state (True, True)
-21:09:38 -- CLOSE  VALVE-3 (SecondToIP)
+21:41:28 -- CLOSE  VALVE-3 (SecondToIP)
 -------------------------- close 3 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 sleep (2,) {}
 SLEEP 2.0
 block started
 WaitControl setup for 2.0  
-load indicator states
 Join finished
-block finished. duration 2.02108311653
+block finished. duration 2.0210108757
 open ('4',) {}
 open name=4 desc=---
 check software interlocks 4
@@ -286,7 +285,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@104)
 change switch state (True, True)
-21:09:40 -- OPEN   VALVE-4 (FirstToSecondStage)
+21:41:30 -- OPEN   VALVE-4 (FirstToSecondStage)
 -------------------------- open 4 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 second stage cleanup
@@ -298,8 +297,8 @@ load indicator states
 load indicator states
 load indicator states
 Join finished
-block finished. duration 30.1299710274
-executed snippet estimated_duration=333.0, duration=116.318468094
+block finished. duration 30.1028811932
+executed snippet estimated_duration=333.0, duration=116.15249896
 helix_air.py completed successfully
 no extraction action
 Requested Output= 0.000
@@ -315,13 +314,13 @@ persistence save - dvc
 no extraction position for 
 Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
 Extraction Finished
-21:10:10 -- ******* Extraction Finished *******
+21:42:00 -- ******* Extraction Finished *******
 no overlap. not waiting for min ms pumptime
 start measurement
 do measurement
 L#=ba-01-H analysis type=blank_air
 Measurement Started helix_air.py
-21:10:10 -- ******* Measurement Started helix_air.py *******
+21:42:00 -- ******* Measurement Started helix_air.py *******
 state changed from extraction to measurement
 setting spec, defl, and gains
 GetExtractionLens ===>> 18.29
@@ -336,11 +335,11 @@ GetGain AX ===>> 1.0071313708941
 GetGain L1 ===>> 1.00793592600847
 GetGain L2(CDD) ===>> 0
 pre measurement save
-New frame /Users/labuser/Pychron/data/isotopes/f8/55cb46-9730-4a99-be3c-198b5b2f0aa4.h5
-flush and close file /Users/labuser/Pychron/data/isotopes/f8/55cb46-9730-4a99-be3c-198b5b2f0aa4.h5
+New frame /Users/labuser/Pychron/data/isotopes/c6/6c1680-4b21-427c-9bae-d7927dcdaa96.h5
+flush and close file /Users/labuser/Pychron/data/isotopes/c6/6c1680-4b21-427c-9bae-d7927dcdaa96.h5
 testing...
 no interpolation path defined
-executed snippet estimated_duration=656.08, duration=0.000240087509155
+executed snippet estimated_duration=656.08, duration=0.000272989273071
 activate_detectors ('H2', 'H1', 'AX', 'L1', 'L2(CDD)') {}
 activate detectors
 *************** Set Analysis View Ar/Ar
@@ -362,47 +361,48 @@ setting detector AX to Ar38 (37.962)
 setting detector L1 to Ar37 (36.962)
 setting detector L2(CDD) to Ar36 (35.962)
 Mapping mass to dac mass func: "parabolic"
-H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260347e+01]
-H2 map mass to dac 39.962 >> 3.77904046092
+H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260397e+01]
+H2 map mass to dac 39.962 >> 3.77904547094
 GetHighVoltage ===>> 9900
-positioning Ar40 (3.77904046092) on H2
+positioning Ar40 (3.77904547094) on H2
 setting magnet DAC
-current  : 3.779040
-requested: 3.779040
+current  : 3.779045
+requested: 3.779045
 Delta Dac: 0.000000
-SetMagnetDAC 3.77904046092 ===>> OK
+SetMagnetDAC 3.77904547094 ===>> OK
 set_dac. change=False
 equilibrate () {'inlet': '2', 'outlet': '1', 'eqtime': 45.0}
 Equilibration Started
-21:10:11 -- ******* Equilibration Started *******
+21:42:01 -- ******* Equilibration Started *******
 check software interlocks 1
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 Close Valve Ion Pump Set ===>> OK
 change switch state (True, True)
-21:10:11 -- CLOSE  VALVE-1 (MSIonPump)
+21:42:01 -- CLOSE  VALVE-1 (MSIonPump)
 waiting 3s before opening inlet value ('2',)
-update labels <pychron.experiment.plot_panel.PlotPanel object at 0x13bcbdc50>
-update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x15b6751d0>"
+update labels <pychron.experiment.plot_panel.PlotPanel object at 0x132fbbd10>
+update labels "<pychron.graph.stacked_regression_graph.StackedRegressionGraph object at 0x162fc4e30>"
 setting label 0 H2 Ar40
 setting label 1 H1 Ar39
 setting label 2 AX Ar38
 setting label 3 L1 Ar37
 setting label 4 L2(CDD) Ar36
-update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x15a179770>"
+update labels "<pychron.graph.stacked_graph.StackedGraph object at 0x132fbb2f0>"
 setting label 0 H2 Ar40
 setting label 1 H1 Ar39
 setting label 2 AX Ar38
 setting label 3 L1 Ar37
 setting label 4 L2(CDD) Ar36
+load indicator states
 check software interlocks 2
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@102)
 change switch state (True, True)
-21:10:14 -- OPEN   VALVE-2 (ExtrToMS)
+21:42:04 -- OPEN   VALVE-2 (ExtrToMS)
 equilibrating for 45.0sec
 set_time_zero () {}
 sniff (45.0,) {}
@@ -413,29 +413,29 @@ add group /sniff/Ar39 (Group) '' table H1
 add group /sniff/Ar38 (Group) '' table AX
 add group /sniff/Ar37 (Group) '' table L1
 add group /sniff/Ar36 (Group) '' table L2(CDD)
-flush and close file /Users/labuser/Pychron/data/isotopes/f8/55cb46-9730-4a99-be3c-198b5b2f0aa4.h5
+flush and close file /Users/labuser/Pychron/data/isotopes/c6/6c1680-4b21-427c-9bae-d7927dcdaa96.h5
 measuring sniff. ncounts=45.0
 "sniff" increment series count="1" fit count="0" regressing="False"
 starting measurement
 load indicator states
 load indicator states
-21:10:39 -- collecting point 25
+21:42:29 -- collecting point 25
 load indicator states
 load indicator states
 Equilibration Finished
-21:11:00 -- ******* Equilibration Finished *******
+21:42:49 -- ******* Equilibration Finished *******
 check software interlocks 2
 interlocks []
 actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@102)
 change switch state (True, True)
-21:11:00 -- CLOSE  VALVE-2 (ExtrToMS)
+21:42:50 -- CLOSE  VALVE-2 (ExtrToMS)
 Post Equilibration Started helix_pump_prep.py
-21:11:00 -- ******* Post Equilibration Started helix_pump_prep.py *******
+21:42:50 -- ******* Post Equilibration Started helix_pump_prep.py *******
 testing...
 no interpolation path defined
-executed snippet estimated_duration=28.0, duration=0.000226974487305
+executed snippet estimated_duration=28.0, duration=0.000261783599854
 close ('6',) {}
 close name=6 desc=---
 check software interlocks 6
@@ -444,7 +444,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@106)
 change switch state (True, True)
-21:11:00 -- CLOSE  VALVE-6 (APOuter)
+21:42:50 -- CLOSE  VALVE-6 (APOuter)
 -------------------------- close 6 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 open ('4',) {}
@@ -455,12 +455,12 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 ROUT:OPEN (@104)
 change switch state (True, True)
-21:11:00 -- OPEN   VALVE-4 (FirstToSecondStage)
+21:42:50 -- OPEN   VALVE-4 (FirstToSecondStage)
 -------------------------- open 4 () result=[(True, True)]
 waiting for write to finish
 measurement finished
-estimated time: 45.000 actual time: :45.226
-flush and close file /Users/labuser/Pychron/data/isotopes/f8/55cb46-9730-4a99-be3c-198b5b2f0aa4.h5
+estimated time: 45.000 actual time: :45.221
+flush and close file /Users/labuser/Pychron/data/isotopes/c6/6c1680-4b21-427c-9bae-d7927dcdaa96.h5
 set_fits () {}
 using default fits file=/Users/labuser/Pychron/scripts/measurement/fits/nominal.yaml
 set "Ar40" to "('Parabolic', 'SEM')"
@@ -481,19 +481,18 @@ add group /signal/Ar40 (Group) '' table H2
 add group /signal/Ar39 (Group) '' table H1
 add group /signal/Ar38 (Group) '' table AX
 add group /signal/Ar37 (Group) '' table L1
-add group /signal/Ar36 (Group) '' table L2(CDD)
-flush and close file /Users/labuser/Pychron/data/isotopes/f8/55cb46-9730-4a99-be3c-198b5b2f0aa4.h5
-measuring signal. ncounts=400
 action=open, ok=True, locked=[False]
+add group /signal/Ar36 (Group) '' table L2(CDD)
 sleep (2,) {}
+flush and close file /Users/labuser/Pychron/data/isotopes/c6/6c1680-4b21-427c-9bae-d7927dcdaa96.h5
 SLEEP 2.0
+measuring signal. ncounts=400
 block started
 WaitControl setup for 2.0  
 "signal" increment series count="2" fit count="1" regressing="True"
 starting measurement
-load indicator states
 Join finished
-block finished. duration 2.03837895393
+block finished. duration 2.01107001305
 open ('11',) {}
 open name=11 desc=---
 check software interlocks 11
@@ -502,7 +501,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel False
 ROUT:OPEN (@111)
 change switch state (True, True)
-21:11:02 -- OPEN   VALVE-11 (APSafety)
+21:42:52 -- OPEN   VALVE-11 (APSafety)
 -------------------------- open 11 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 open ('5',) {}
@@ -513,7 +512,7 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@105)
 change switch state (True, True)
-21:11:03 -- OPEN   VALVE-5 (FirstToTurbo)
+21:42:53 -- OPEN   VALVE-5 (FirstToTurbo)
 -------------------------- open 5 () result=[(True, True)]
 action=open, ok=True, locked=[False]
 sleep (10,) {}
@@ -522,7 +521,7 @@ block started
 WaitControl setup for 10.0  
 load indicator states
 Join finished
-block finished. duration 10.0671460629
+block finished. duration 10.0534570217
 close ('4',) {}
 close name=4 desc=---
 check software interlocks 4
@@ -531,15 +530,16 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script close_channel True
 ROUT:CLOSE (@104)
 change switch state (True, True)
-21:11:13 -- CLOSE  VALVE-4 (FirstToSecondStage)
+21:43:03 -- CLOSE  VALVE-4 (FirstToSecondStage)
 -------------------------- close 4 () result=[(True, True)]
 action=close, ok=True, locked=[False]
 sleep (2,) {}
 SLEEP 2.0
 block started
 WaitControl setup for 2.0  
+load indicator states
 Join finished
-block finished. duration 2.02087402344
+block finished. duration 2.00481510162
 open ('3',) {}
 open name=3 desc=---
 check software interlocks 3
@@ -548,70 +548,70 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 ROUT:OPEN (@103)
 change switch state (True, True)
-21:11:15 -- OPEN   VALVE-3 (SecondToIP)
+21:43:05 -- OPEN   VALVE-3 (SecondToIP)
 -------------------------- open 3 () result=[(True, True)]
 action=open, ok=True, locked=[False]
-executed snippet estimated_duration=42.0, duration=15.9627399445
+executed snippet estimated_duration=42.0, duration=15.9656720161
 helix_pump_prep.py completed successfully
 Post Equilibration Finished
-21:11:16 -- ******* Post Equilibration Finished *******
-load indicator states
-21:11:25 -- collecting point 25
-load indicator states
-load indicator states
-21:11:50 -- collecting point 50
+21:43:06 -- ******* Post Equilibration Finished *******
+21:43:15 -- collecting point 25
 load indicator states
 load indicator states
 load indicator states
-21:12:15 -- collecting point 75
+21:43:40 -- collecting point 50
 load indicator states
 load indicator states
-21:12:40 -- collecting point 100
-load indicator states
-load indicator states
-21:13:05 -- collecting point 125
+21:44:05 -- collecting point 75
 load indicator states
 load indicator states
 load indicator states
-21:13:30 -- collecting point 150
+21:44:30 -- collecting point 100
 load indicator states
 load indicator states
-21:13:55 -- collecting point 175
-load indicator states
-load indicator states
-load indicator states
-21:14:20 -- collecting point 200
-load indicator states
-load indicator states
-21:14:46 -- collecting point 225
+21:44:55 -- collecting point 125
 load indicator states
 load indicator states
 load indicator states
-21:15:11 -- collecting point 250
+21:45:20 -- collecting point 150
 load indicator states
 load indicator states
-21:15:36 -- collecting point 275
+21:45:45 -- collecting point 175
 load indicator states
 load indicator states
-21:16:01 -- collecting point 300
-load indicator states
-load indicator states
-load indicator states
-21:16:26 -- collecting point 325
-load indicator states
-load indicator states
-21:16:51 -- collecting point 350
+21:46:10 -- collecting point 200
 load indicator states
 load indicator states
 load indicator states
-21:17:16 -- collecting point 375
+21:46:35 -- collecting point 225
 load indicator states
 load indicator states
-21:17:41 -- collecting point 400
+21:47:01 -- collecting point 250
+load indicator states
+load indicator states
+load indicator states
+21:47:26 -- collecting point 275
+load indicator states
+load indicator states
+21:47:51 -- collecting point 300
+load indicator states
+load indicator states
+load indicator states
+21:48:16 -- collecting point 325
+load indicator states
+load indicator states
+21:48:41 -- collecting point 350
+load indicator states
+load indicator states
+21:49:06 -- collecting point 375
+load indicator states
+load indicator states
+load indicator states
+21:49:31 -- collecting point 400
 waiting for write to finish
 measurement finished
-estimated time: 400.000 actual time: :401.304
-flush and close file /Users/labuser/Pychron/data/isotopes/f8/55cb46-9730-4a99-be3c-198b5b2f0aa4.h5
+estimated time: 400.000 actual time: :401.377
+flush and close file /Users/labuser/Pychron/data/isotopes/c6/6c1680-4b21-427c-9bae-d7927dcdaa96.h5
 baselines () {'detector': 'H2', 'mass': 39.59, 'ncounts': 120}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Baseline
 build tables- baseline [Detector(H2), Detector(H1), Detector(AX), Detector(L1), Detector(L2(CDD))]
@@ -620,165 +620,384 @@ add group baseline table H1
 add group baseline table AX
 add group baseline table L1
 add group baseline table L2(CDD)
-flush and close file /Users/labuser/Pychron/data/isotopes/f8/55cb46-9730-4a99-be3c-198b5b2f0aa4.h5
+flush and close file /Users/labuser/Pychron/data/isotopes/c6/6c1680-4b21-427c-9bae-d7927dcdaa96.h5
 detector Detector(H2)
 POSITION 39.59 H2
 Mapping mass to dac mass func: "parabolic"
-H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260347e+01]
-H2 map mass to dac 39.59 >> 3.71598946802
+H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260397e+01]
+H2 map mass to dac 39.59 >> 3.71599447804
 GetHighVoltage ===>> 9900
-positioning 39.59 (3.71598946802) on H2
+positioning 39.59 (3.71599447804) on H2
 setting magnet DAC
-current  : 3.779040
-requested: 3.715989
+current  : 3.779045
+requested: 3.715994
 Delta Dac: 0.063051
-SetMagnetDAC 3.71598946802 ===>> OK
+SetMagnetDAC 3.71599447804 ===>> OK
 Magnet settling time: 0.500
 Magnet settling complete
 set_dac. change=True
 Delaying 4s for detectors to settle
-load indicator states
 Join finished
 measuring baseline. ncounts=120
 "baseline" increment series count="2" fit count="1" regressing="True"
 starting measurement
-============ Exception ==============
-Traceback (most recent call last):
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/qt4/base_window.py", line 198, in paintEvent
-    self.handler.paintEvent(event)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/qt4/base_window.py", line 50, in paintEvent
-    self._enable_window._paint(event)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/abstract_window.py", line 467, in _paint
-    self.component.draw(gc, view_bounds=(0, 0, size[0], size[1]))
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 421, in draw
-    self._draw(gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 773, in _draw
-    self._dispatch_draw(layer, gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 327, in _dispatch_draw
-    component._dispatch_draw(layer, gc, new_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 312, in _dispatch_draw
-    my_handler(gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 352, in _draw_container_underlay
-    self._draw_underlay(gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 881, in _draw_underlay
-    underlay.overlay(self, gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/chaco/grid.py", line 306, in overlay
-    self._draw_component(gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/chaco/grid.py", line 344, in _draw_component
-    ends[:,0] = self._tick_extents[:,1]
-IndexError: too many indices for array
-============ End Exception ==========
-load indicator states
-load indicator states
-21:18:11 -- collecting point 25
 load indicator states
 load indicator states
 load indicator states
-21:18:36 -- collecting point 50
+21:50:01 -- collecting point 25
 load indicator states
 load indicator states
-21:19:01 -- collecting point 75
+21:50:26 -- collecting point 50
 load indicator states
 load indicator states
-21:19:27 -- collecting point 100
+load indicator states
+21:50:52 -- collecting point 75
+load indicator states
+load indicator states
+21:51:17 -- collecting point 100
 load indicator states
 load indicator states
 waiting for write to finish
 measurement finished
-estimated time: 120.000 actual time: :120.461
-flush and close file /Users/labuser/Pychron/data/isotopes/f8/55cb46-9730-4a99-be3c-198b5b2f0aa4.h5
+estimated time: 120.000 actual time: :120.509
+flush and close file /Users/labuser/Pychron/data/isotopes/c6/6c1680-4b21-427c-9bae-d7927dcdaa96.h5
 activate_detectors ('L2(CDD)', 'AX') {'peak_center': True}
 peak_center () {'detector': 'H2', 'isotope': 'Ar40'}
-peak center: mean=3.86257530406 threshold=3
+peak center: mean=3.80900002799 threshold=3
 peak center started
 setup peak center. detector=['H2', 'L2(CDD)', 'AX'], isotope=Ar40
-VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x15c478c50>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
-VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x15c478c50>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
-VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x15c478c50>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x15a2e6950>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x15a2e6950>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
+VersionedUnpickler [<apptools.sweet_pickle.versioned_unpickler.VersionedUnpickler object at 0x15a2e6950>] using Updater [<apptools.sweet_pickle.updater.Updater object at 0x1347a5d70>]
 setting integration time = 1.048576
 SetIntegrationTime 1.048576 ===>> OK
 Mapping mass to dac mass func: "parabolic"
-H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260347e+01]
-H2 map mass to dac 39.962 >> 3.77904046092
+H2 map mass coeffs = [  2.53589168e-02  -1.84786063e+00   3.71260397e+01]
+H2 map mass to dac 39.962 >> 3.77904547094
 GetHighVoltage ===>> 9900
 do peak center. <pychron.spectrometer.jobs.peak_center.PeakCenter object at 0x13003da10>
 doing pc
-starting peak center. center dac= 3.77904046092 step_width=5e-05
+starting peak center. center dac= 3.77904547094 step_width=5e-05
 width = 5e-05
 get scan parameters. half-width=0.0025,window=0.0025, i=0, scalar=1
-Scan parameters center=3.77904 width=0.00500 (3.77654 - 3.78154)
-Moving to starting dac 3.77654046092
+Scan parameters center=3.77905 width=0.00500 (3.77655 - 3.78155)
+Moving to starting dac 3.77654547094
 setting magnet DAC
-current  : 3.715989
-requested: 3.776540
+current  : 3.715994
+requested: 3.776545
 Delta Dac: 0.060551
-SetMagnetDAC 3.77654046092 ===>> OK
+SetMagnetDAC 3.77654547094 ===>> OK
 Magnet settling time: 0.500
 Magnet settling complete
 set_dac. change=True
-Wait until signal near baseline. tol= 0.0112310768505. timeout= 10
-load indicator states
+Wait until signal near baseline. tol= -0.0803429888356. timeout= 10
 Peak center baseline intensity achieved
-_do_sweep sm= 3.77654046092, em= 3.78154046092, stm= 5e-05
-calculated step values: start=3.77654046092, end=3.78154046092, width=5e-05, nsteps=101.0
+_do_sweep sm= 3.77654547094, em= 3.78154547094, stm= 5e-05
+calculated step values: start=3.77654547094, end=3.78154547094, width=5e-05, nsteps=101.0
 setting magnet DAC
-current  : 3.776540
-requested: 3.776540
+current  : 3.776545
+requested: 3.776545
 Delta Dac: 0.000000
 set_dac. change=False
 setting magnet DAC
-current  : 3.776540
-requested: 3.776591
+current  : 3.776545
+requested: 3.776596
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.776591
-requested: 3.776641
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776641
-requested: 3.776692
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776692
-requested: 3.776742
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.776742
-requested: 3.776793
+current  : 3.776596
+requested: 3.776646
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.776793
-requested: 3.776843
+current  : 3.776646
+requested: 3.776697
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.776843
-requested: 3.776894
+current  : 3.776697
+requested: 3.776747
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.776894
-requested: 3.776945
+current  : 3.776747
+requested: 3.776798
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776798
+requested: 3.776849
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776849
+requested: 3.776899
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776899
+requested: 3.776950
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.776950
+requested: 3.777000
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777000
+requested: 3.777051
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777051
+requested: 3.777101
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777101
+requested: 3.777152
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777152
+requested: 3.777202
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777202
+requested: 3.777253
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777253
+requested: 3.777303
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777303
+requested: 3.777354
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777354
+requested: 3.777404
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777404
+requested: 3.777455
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777455
+requested: 3.777505
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777505
+requested: 3.777556
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777556
+requested: 3.777606
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777606
+requested: 3.777657
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777657
+requested: 3.777707
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777707
+requested: 3.777758
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777758
+requested: 3.777808
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777808
+requested: 3.777859
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777859
+requested: 3.777909
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777909
+requested: 3.777960
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.777960
+requested: 3.778010
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778010
+requested: 3.778061
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778061
+requested: 3.778111
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778111
+requested: 3.778162
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778162
+requested: 3.778212
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778212
+requested: 3.778263
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778263
+requested: 3.778313
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778313
+requested: 3.778364
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778364
+requested: 3.778414
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778414
+requested: 3.778465
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778465
+requested: 3.778515
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778515
+requested: 3.778566
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778566
+requested: 3.778616
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.778616
+requested: 3.778667
 Delta Dac: 0.000051
 ============ Exception ==============
 Traceback (most recent call last):
@@ -810,691 +1029,420 @@ Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.776945
-requested: 3.776995
+current  : 3.778667
+requested: 3.778717
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.776995
-requested: 3.777046
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777046
-requested: 3.777096
+current  : 3.778717
+requested: 3.778768
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777096
-requested: 3.777147
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777147
-requested: 3.777197
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777197
-requested: 3.777248
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777248
-requested: 3.777298
+current  : 3.778768
+requested: 3.778818
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777298
-requested: 3.777349
+current  : 3.778818
+requested: 3.778869
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777349
-requested: 3.777399
+current  : 3.778869
+requested: 3.778919
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777399
-requested: 3.777450
+current  : 3.778919
+requested: 3.778970
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777450
-requested: 3.777500
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777500
-requested: 3.777551
+current  : 3.778970
+requested: 3.779020
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777551
-requested: 3.777601
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777601
-requested: 3.777652
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777652
-requested: 3.777702
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.777702
-requested: 3.777753
+current  : 3.779020
+requested: 3.779071
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777753
-requested: 3.777803
+current  : 3.779071
+requested: 3.779121
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777803
-requested: 3.777854
+current  : 3.779121
+requested: 3.779172
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777854
-requested: 3.777904
+current  : 3.779172
+requested: 3.779222
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777904
-requested: 3.777955
+current  : 3.779222
+requested: 3.779273
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.777955
-requested: 3.778005
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778005
-requested: 3.778056
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778056
-requested: 3.778106
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778106
-requested: 3.778157
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778157
-requested: 3.778207
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778207
-requested: 3.778258
+current  : 3.779273
+requested: 3.779323
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778258
-requested: 3.778308
+current  : 3.779323
+requested: 3.779374
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778308
-requested: 3.778359
+current  : 3.779374
+requested: 3.779424
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778359
-requested: 3.778409
+current  : 3.779424
+requested: 3.779475
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-============ Exception ==============
-current  : 3.778409
-Traceback (most recent call last):
-requested: 3.778460
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/qt4/base_window.py", line 198, in paintEvent
-    self.handler.paintEvent(event)
+current  : 3.779475
+requested: 3.779525
 Delta Dac: 0.000051
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/qt4/base_window.py", line 50, in paintEvent
-    self._enable_window._paint(event)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/abstract_window.py", line 467, in _paint
-    self.component.draw(gc, view_bounds=(0, 0, size[0], size[1]))
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 421, in draw
-    self._draw(gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 773, in _draw
-    self._dispatch_draw(layer, gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 327, in _dispatch_draw
-    component._dispatch_draw(layer, gc, new_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 312, in _dispatch_draw
-    my_handler(gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/container.py", line 352, in _draw_container_underlay
-    self._draw_underlay(gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/enable/component.py", line 881, in _draw_underlay
-    underlay.overlay(self, gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/chaco/grid.py", line 306, in overlay
-    self._draw_component(gc, view_bounds, mode)
-File "/Users/labuser/miniconda2/envs/pychron2/lib/python2.7/site-packages/chaco/grid.py", line 344, in _draw_component
-    ends[:,0] = self._tick_extents[:,1]
-IndexError: too many indices for array
-============ End Exception ==========
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778460
-requested: 3.778510
+current  : 3.779525
+requested: 3.779576
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778510
-requested: 3.778561
+current  : 3.779576
+requested: 3.779626
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778561
-requested: 3.778611
+current  : 3.779626
+requested: 3.779677
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778611
-requested: 3.778662
+current  : 3.779677
+requested: 3.779727
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778662
-requested: 3.778712
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778712
-requested: 3.778763
+current  : 3.779727
+requested: 3.779778
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778763
-requested: 3.778813
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778813
-requested: 3.778864
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778864
-requested: 3.778914
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.778914
-requested: 3.778965
+current  : 3.779778
+requested: 3.779828
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.778965
-requested: 3.779015
+current  : 3.779828
+requested: 3.779879
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779015
-requested: 3.779066
+current  : 3.779879
+requested: 3.779929
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779066
-requested: 3.779116
+current  : 3.779929
+requested: 3.779980
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779116
-requested: 3.779167
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779167
-requested: 3.779217
+current  : 3.779980
+requested: 3.780030
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779217
-requested: 3.779268
+current  : 3.780030
+requested: 3.780081
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779268
-requested: 3.779318
+current  : 3.780081
+requested: 3.780131
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779318
-requested: 3.779369
+current  : 3.780131
+requested: 3.780182
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779369
-requested: 3.779419
+current  : 3.780182
+requested: 3.780232
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779419
-requested: 3.779470
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779470
-requested: 3.779520
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779520
-requested: 3.779571
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779571
-requested: 3.779621
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779621
-requested: 3.779672
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779672
-requested: 3.779722
+current  : 3.780232
+requested: 3.780283
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779722
-requested: 3.779773
+current  : 3.780283
+requested: 3.780333
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779773
-requested: 3.779823
+current  : 3.780333
+requested: 3.780384
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779823
-requested: 3.779874
+current  : 3.780384
+requested: 3.780434
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779874
-requested: 3.779924
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.779924
-requested: 3.779975
+current  : 3.780434
+requested: 3.780485
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.779975
-requested: 3.780025
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780025
-requested: 3.780076
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780076
-requested: 3.780126
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780126
-requested: 3.780177
+current  : 3.780485
+requested: 3.780535
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780177
-requested: 3.780227
+current  : 3.780535
+requested: 3.780586
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780227
-requested: 3.780278
+current  : 3.780586
+requested: 3.780636
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780278
-requested: 3.780328
+current  : 3.780636
+requested: 3.780687
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780328
-requested: 3.780379
+current  : 3.780687
+requested: 3.780737
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780379
-requested: 3.780429
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780429
-requested: 3.780480
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780480
-requested: 3.780530
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780530
-requested: 3.780581
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780581
-requested: 3.780631
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780631
-requested: 3.780682
+current  : 3.780737
+requested: 3.780788
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780682
-requested: 3.780732
+current  : 3.780788
+requested: 3.780838
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780732
-requested: 3.780783
+current  : 3.780838
+requested: 3.780889
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780783
-requested: 3.780833
+current  : 3.780889
+requested: 3.780939
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780833
-requested: 3.780884
+current  : 3.780939
+requested: 3.780990
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.780884
-requested: 3.780934
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-load indicator states
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780934
-requested: 3.780985
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.780985
-requested: 3.781035
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.781035
-requested: 3.781086
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.781086
-requested: 3.781136
+current  : 3.780990
+requested: 3.781040
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781136
-requested: 3.781187
+current  : 3.781040
+requested: 3.781091
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781187
-requested: 3.781237
+current  : 3.781091
+requested: 3.781141
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781237
-requested: 3.781288
+current  : 3.781141
+requested: 3.781192
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781288
-requested: 3.781338
-Delta Dac: 0.000051
-Magnet settling time: 2.097
-Magnet settling complete
-set_dac. change=True
-setting magnet DAC
-current  : 3.781338
-requested: 3.781389
+current  : 3.781192
+requested: 3.781242
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 load indicator states
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781389
-requested: 3.781439
+current  : 3.781242
+requested: 3.781293
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781439
-requested: 3.781490
+current  : 3.781293
+requested: 3.781343
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 setting magnet DAC
-current  : 3.781490
-requested: 3.781540
+current  : 3.781343
+requested: 3.781394
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781394
+requested: 3.781444
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781444
+requested: 3.781495
+Delta Dac: 0.000051
+Magnet settling time: 2.097
+load indicator states
+Magnet settling complete
+set_dac. change=True
+setting magnet DAC
+current  : 3.781495
+requested: 3.781545
 Delta Dac: 0.000051
 Magnet settling time: 2.097
 Magnet settling complete
 set_dac. change=True
 result of _do_sweep=True
-result of _calculate_peak_center=([3.7776176152304233, 3.7790605010019664, 3.7805033867735096], [1.0659773698726132, 5.7644883126225821, 1.0718382363974464], 3.7798370541081785, 5.7644883126225821)
-Failed to find a valid peak. No peak greater than 1.0. max = 0.0872945203366
-Failed to find a valid peak. No peak greater than 1.0. max = 0.253711973415
+result of _calculate_peak_center=([3.7776126052103898, 3.7790605010019727, 3.780508396793556], [1.0016795245506156, 5.6532365019619037, 1.0989394770482512], 3.7794713226452594, 5.6532365019619037)
+Failed to find a valid peak. No peak greater than 1.0. max = 0.0885096099327
+Failed to find a valid peak. No peak greater than 1.0. max = 0.426804864855
 new center pos Detector(H2) (Ar40) @ 3.779060501
 GetHighVoltage ===>> 9900
 dac uncorrected for HV and deflection 3.779060501
@@ -1506,9 +1454,9 @@ get initial guess parabolic
 get initial guess parabolic
 dump mftable to /Users/labuser/Pychron/setupfiles/spectrometer/mftables/mftable.csv
 setting magnet DAC
-current  : 3.781540
+current  : 3.781545
 requested: 3.779061
-Delta Dac: 0.002480
+Delta Dac: 0.002485
 SetMagnetDAC 3.779060501 ===>> OK
 Magnet settling time: 0.500
 sweep finished
@@ -1516,18 +1464,18 @@ Magnet settling complete
 set_dac. change=True
 setting integration time = 0.524288
 SetIntegrationTime 0.524288 ===>> OK
-Failed to find a valid peak. No peak greater than 1.0. max = 0.0872945203366
-Failed to find a valid peak. No peak greater than 1.0. max = 0.253711973415
-flush and close file /Users/labuser/Pychron/data/isotopes/f8/55cb46-9730-4a99-be3c-198b5b2f0aa4.h5
-executed snippet estimated_duration=656.08, duration=792.643316984
+Failed to find a valid peak. No peak greater than 1.0. max = 0.0885096099327
+Failed to find a valid peak. No peak greater than 1.0. max = 0.426804864855
+flush and close file /Users/labuser/Pychron/data/isotopes/c6/6c1680-4b21-427c-9bae-d7927dcdaa96.h5
+executed snippet estimated_duration=656.08, duration=792.033257961
 helix_air.py completed successfully
 Measurement Finished
-21:23:23 -- ******* Measurement Finished *******
+21:55:12 -- ******* Measurement Finished *******
 Post Measurement Started helix_pump_ms.py
-21:23:23 -- ******* Post Measurement Started helix_pump_ms.py *******
+21:55:12 -- ******* Post Measurement Started helix_pump_ms.py *******
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=2.8133392334e-05
+executed snippet estimated_duration=0, duration=3.21865081787e-05
 open ('1',) {}
 open name=1 desc=---
 check software interlocks 1
@@ -1536,14 +1484,14 @@ actuate state mode=None-script, software_lock=False
 doing actuation None-script open_channel True
 Open Valve Ion Pump Set ===>> OK
 change switch state (True, True)
-21:23:23 -- OPEN   VALVE-1 (MSIonPump)
+21:55:12 -- OPEN   VALVE-1 (MSIonPump)
 -------------------------- open 1 () result=[(True, True)]
 action=open, ok=True, locked=[False]
-executed snippet estimated_duration=0, duration=0.267215967178
+executed snippet estimated_duration=0, duration=0.269523143768
 helix_pump_ms.py completed successfully
 setting _ms_pumptime
 Post Measurement Finished
-21:23:23 -- ******* Post Measurement Finished *******
+21:55:13 -- ******* Post Measurement Finished *******
 $$$$$$$$$$$$$$$$$$$$ state at run end measurement
 state changed from measurement to success
 post measurement save measured=True aborted=False
@@ -1561,10 +1509,10 @@ setting fod for H1= {'filter_outliers': True, 'std_devs': 2, 'iterations': 1}
 persistence save...
 persistence save - db
 post measurement save
-5066553392 connecting to database sqlite:////Users/labuser/Pychron/.appdata/local_lab.db
+5206911792 connecting to database sqlite:////Users/labuser/Pychron/.appdata/local_lab.db
 connected to db sqlite:////Users/labuser/Pychron/.appdata/local_lab.db
-create new session 5066553392
-close session 5066553392
+create new session 5206911792
+close session 5206911792
 No database instance. Not saving post measurement to isotopedb database
 $$$$$$$$$$$$$$$ auto_save_detector_ic=False
 persistence save - dvc
@@ -1573,8 +1521,8 @@ create new session 5003415088
 close session 5003415088
 ---------------- Experiment Queue saving disabled
 DVC saving peakcenter
-Failed to find a valid peak. No peak greater than 1.0. max = 0.0872945203366
-Failed to find a valid peak. No peak greater than 1.0. max = 0.253711973415
+Failed to find a valid peak. No peak greater than 1.0. max = 0.0885096099327
+Failed to find a valid peak. No peak greater than 1.0. max = 0.426804864855
 Popen(['git', 'fetch', 'origin'], cwd=/Users/labuser/Pychron/data/.dvc/repositories/Helix_air180, universal_newlines=False, shell=None)
 Popen(['git', 'status', '-sb'], cwd=/Users/labuser/Pychron/data/.dvc/repositories/Helix_air180, universal_newlines=False, shell=None)
 Smart pull ahead: 0 behind: 0
@@ -1600,11 +1548,11 @@ add to repo msg=modified - -H-63.blan.json
 commit message=<BLANKS> preceding ba-01-H-63
 add to repo msg=modified - -H-63.icfa.json
 commit message=<ICFactor> default
-load indicator states
-push repository <pychron.git_archive.repo_manager.GitRepoManager object at 0x1332ea170>
+push repository <pychron.git_archive.repo_manager.GitRepoManager object at 0x157b9d950>
 pushing to remote=origin, url=https://github.com
 Popen(['git', 'push', 'origin', 'master'], cwd=/Users/labuser/Pychron/data/.dvc/repositories/Helix_air180, universal_newlines=False, shell=None)
 Popen(['git', 'fetch', 'origin'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
+load indicator states
 Popen(['git', 'status', '-sb'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
 Popen(['git', 'diff', 'HEAD', '--name-only'], cwd=/Users/labuser/Pychron/data/.dvc/MetaData, universal_newlines=False, shell=None)
 no changes to meta repo
@@ -1612,30 +1560,30 @@ Popen(['git', 'push', 'origin', 'master'], cwd=/Users/labuser/Pychron/data/.dvc/
 create new session 5003415088
 add association Helix_air180
 get identifier "ba-01-H"
-setting analysis irradiation position=<pychron.dvc.dvc_orm.IrradiationPositionTbl object at 0x13bc7ca10>
+setting analysis irradiation position=<pychron.dvc.dvc_orm.IrradiationPositionTbl object at 0x13c509710>
 close session 5003415088
 ================= post measurement finished
-21:23:30 -- ******* Post Run Check *******
+21:55:20 -- ******* Post Run Check *******
 loading queue conditionals post_run_actions
 loading system conditionals post_run_actions
 loading conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
 loading queue conditionals post_run_terminations
 loading system conditionals post_run_terminations
 loading conditionals from /Users/labuser/Pychron/setupfiles/spectrometer/default_conditionals.yaml
-21:23:30 -- ******* Post Run Check Passed *******
-21:23:30 -- Automated run ba-01-H-63 success duration: 916.189 s
+21:55:20 -- ******* Post Run Check Passed *******
+21:55:20 -- Automated run ba-01-H-63 success duration: 916.226 s
 ----------------- finish -----------------
 ----------------- stop -----------------
 retroactive repository identifiers disabled
-finish run. runs completed=27
-update duration runid=ba-01-H-63, duration=916.188549995, md5=060fae79
+finish run. runs completed=29
+update duration runid=ba-01-H-63, duration=916.225723982, md5=060fae79
 loading script "helix_air.py"
 loading script "helix_pump_ms.py"
 loading script "helix_air.py"
 loading script "helix_pump_prep.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=656.08, duration=0.000334024429321
+executed snippet estimated_duration=656.08, duration=0.000279903411865
 script duration name:air seconds:656.0
 loading script "helix_air.py"
 loading script "helix_pump_ms.py"
@@ -1643,7 +1591,7 @@ loading script "helix_air.py"
 loading script "helix_pump_prep.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=0, duration=4.6968460083e-05
+executed snippet estimated_duration=0, duration=4.00543212891e-05
 air in script context. using previous estimated duration
 script duration name:air seconds:656.0
 loading script "helix_air.py"
@@ -1652,7 +1600,7 @@ loading script "helix_air.py"
 loading script "helix_pump_prep.py"
 testing...
 no interpolation path defined
-executed snippet estimated_duration=28.0, duration=0.000210046768188
+executed snippet estimated_duration=28.0, duration=0.000205993652344
 Script duration 1312.0
 Run total estimated duration= 1313.000
 script duration name:air seconds:656.0
@@ -2125,15 +2073,7 @@ script duration name:air seconds:656.0
 script duration name:air seconds:656.0
 Script duration 1312.0
 Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-script duration name:air seconds:656.0
-script duration name:air seconds:656.0
-Script duration 1312.0
-Run total estimated duration= 1313.000
-nruns=120 before=5.0, run_dur=157560.0, btw=3570.0
+nruns=118 before=5.0, run_dur=154934.0, btw=3510.0
 write rem/ex queues
 /Users/labuser/Pychron/experiments/rem/Air.rem.txt
 /Users/labuser/Pychron/experiments/rem/Air.ex.txt
